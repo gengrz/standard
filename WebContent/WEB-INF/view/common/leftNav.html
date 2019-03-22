@@ -1,0 +1,26 @@
+
+<ul class="layui-nav layui-nav-tree layui-bg-cyan" lay-filter="navBar" id="naviHeaderMenu">
+	#for(x:leftNav) #if(x.children.size()>0)
+	<li class="layui-nav-item layui-nav-itemed">
+		<a href="javascript:;">#(x.name)</a>
+		<dl class="layui-nav-child">
+			#for(m:x.children)
+			<dd>
+				<a href="javascript:;" data-url="#(m.pageurl)?_token=586549_212453" data-id="#(m.pageurl)">
+					<span>#(m.name)</span>
+				</a>
+			</dd>
+			#end
+		</dl>
+	</li>
+	#else
+	<li class="layui-nav-item">
+		<dd>
+			<a href="javascript:;" data-url="#(x.pageurl)?_token=586549_212453" data-id="#(x.pageurl)">
+				<span>#(x.name)</span>
+			</a>
+		</dd>
+	</li>
+	#end #end
+
+</ul>

@@ -1,0 +1,115 @@
+#include("../admin/content_layout.html")
+
+<!-- 调用layout函数 -->
+#@layout()
+<!-- 引入额外的css -->
+#define css()
+<style>
+	.grid-now {
+	    padding: 5px;
+	    line-height: 15px;
+	    text-align: center;
+	    background-color: #63BA79;
+	    color: #fff;
+	    border-radius:30px;
+	}
+	.grid-after {
+	    padding: 5px;
+	    line-height: 15px;
+	    text-align: center;
+	    border-radius:30px;
+	}
+	.element{
+	    width: 0px;
+	    height: 0px;
+	    border-top: 20px solid transparent;
+	    border-right: 20px solid transparent;
+	    border-bottom: 20px solid transparent;
+	    border-left: 20px solid darkkhaki;
+	}
+</style>
+#end
+
+<!-- 引入额外的js -->
+#define js() 
+#end
+<!-- 主体内容 -->
+#define content()
+<div class="layui-fluid">
+<div class="row">
+<div class="layui-col-md6 layui-col-md-offset3">
+  <div class="layui-row layui-col-space1">
+    <div class="layui-col-md4">
+      <div class="grid-now">接入源定义</div>
+    </div>
+    <div class="layui-col-md4">
+      <div class="grid-now">结构定义</div>
+    </div>
+    <div class="layui-col-md4">
+      <div class="grid-after">数据保存</div>
+    </div>
+  </div>
+<form class="layui-form" action="" style="margin-top: 5px;">
+  
+   <div class="layui-form-item">
+    	<div class="layui-input-block">
+	      <button class="layui-btn" lay-submit="" lay-filter="formsub">进入下一步</button>
+	      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+	    </div>
+   </div>
+</form>
+</div>
+</div>
+#end
+
+
+<!-- 引入额外的js -->
+#define imp_js()
+	<script>
+		
+		layui.use('form', function(){
+			  var form = layui.form;
+			  
+			  //监听提交
+			  form.on('submit(formsub)', function(data){
+				$.ajax({
+					url:"/system/dataInput/saveDataSource/",       
+	                method:'post',       
+	                data:data.field,        
+	                dataType:'JSON',         
+	                success:function(res){  
+						layer.msg("表单提交成功");    
+	                },    
+                    error:function (data) {
+                        layer.msg("表单提交失败");  
+                    }           
+                });         	
+			   });
+		});
+	 	
+		layui.use('upload', function(){
+			  var upload = layui.upload;
+			   
+			  //执行实例
+			  var uploadInst = upload.render({
+			    elem: '#file' //绑定元素
+			    ,url: '/system/dataInput/fileUpload' //上传接口
+		    	,accept: 'file' //普通文件
+	    	    ,exts: 'txt' //只允许上传压缩文件
+			    ,done: function(res){
+			    	layer.msg("上传文件成功"); 
+			    }
+			    ,error: function(){
+			    	layer.msg("上传文件失败"); 
+			    }
+			  });
+		 });
+	
+	
+		layui.config({
+			base : '/js/layuiadmin/' //静态资源所在路径
+		}).extend({
+			index : 'lib/index' //主入口模块
+		}).use([ 'index', 'sample' ]);
+	</script>
+#end

@@ -1,0 +1,1977 @@
+
+2019-03-22 08:39:24
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 08:39:25
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 08:39:25
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 08:39:26
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 08:39:27
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 08:53:52
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 08:53:54
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 08:53:54
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 08:53:55
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 08:53:56
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 08:59:52
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 08:59:54
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 08:59:54
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 08:59:55
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 08:59:56
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 09:00:48
+[ERROR]-[Thread: qtp1436664465-27]-[com.jfinal.core.ActionHandler.handle()]: /system/dataInput/fileUpload
+java.lang.NullPointerException
+	at com.index.input.service.DataInputService.fileChannelCopy(DataInputService.java:77)
+	at com.index.input.controller.DataInputController.fileUpload(DataInputController.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:73)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:86)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 09:01:12
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 09:01:13
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 09:01:13
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 09:01:14
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 09:01:19
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 09:01:20
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 09:01:20
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 09:01:21
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 09:01:23
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 09:02:01
+[ERROR]-[Thread: qtp1436664465-27]-[com.jfinal.core.ActionHandler.handle()]: /system/dataInput/fileUpload
+java.lang.NullPointerException
+	at com.index.input.service.DataInputService.fileChannelCopy(DataInputService.java:77)
+	at com.index.input.controller.DataInputController.fileUpload(DataInputController.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:73)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:86)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 09:07:33
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 09:07:34
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 09:07:34
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 09:07:36
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 09:07:37
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 09:10:56
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 09:10:57
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 09:10:57
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 09:10:58
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 09:10:59
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 09:12:44
+[ERROR]-[Thread: qtp1436664465-28]-[com.jfinal.core.ActionHandler.handle()]: /system/dataInput/fileUpload
+java.lang.RuntimeException: File not found : E:\文件\standard\standard\WebContent/WEB-INF/view/system/dataInput/fileUpload.html
+	at com.jfinal.template.source.FileSource.getContent(FileSource.java:70)
+	at com.jfinal.template.Engine.buildTemplateBySourceFactory(Engine.java:154)
+	at com.jfinal.template.Engine.getTemplate(Engine.java:139)
+	at com.jfinal.render.TemplateRender.render(TemplateRender.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:103)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 09:12:44
+[ERROR]-[Thread: qtp1436664465-28]-[com.jfinal.core.JFinalFilter.doFilter()]: /system/dataInput/fileUpload
+java.lang.IllegalStateException: STREAM
+	at org.eclipse.jetty.server.Response.getWriter(Response.java:699)
+	at com.jfinal.render.ErrorRender.render(ErrorRender.java:59)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:141)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 09:18:26
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 09:18:28
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 09:18:28
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 09:18:29
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 09:18:31
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 09:19:16
+[ERROR]-[Thread: qtp1436664465-25]-[com.jfinal.core.ActionHandler.handle()]: /system/dataInput/fileUpload
+java.lang.RuntimeException: File not found : E:\文件\standard\standard\WebContent/WEB-INF/view/system/dataInput/fileUpload.html
+	at com.jfinal.template.source.FileSource.getContent(FileSource.java:70)
+	at com.jfinal.template.Engine.buildTemplateBySourceFactory(Engine.java:154)
+	at com.jfinal.template.Engine.getTemplate(Engine.java:139)
+	at com.jfinal.render.TemplateRender.render(TemplateRender.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:103)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 09:19:16
+[ERROR]-[Thread: qtp1436664465-25]-[com.jfinal.core.JFinalFilter.doFilter()]: /system/dataInput/fileUpload
+java.lang.IllegalStateException: STREAM
+	at org.eclipse.jetty.server.Response.getWriter(Response.java:699)
+	at com.jfinal.render.ErrorRender.render(ErrorRender.java:59)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:141)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 09:21:52
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 09:21:54
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 09:21:54
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 09:21:55
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 09:21:57
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 09:22:27
+[ERROR]-[Thread: qtp1436664465-26]-[com.jfinal.core.ActionHandler.handle()]: /system/dataInput/fileUpload
+java.lang.RuntimeException: File not found : E:\文件\standard\standard\WebContent/WEB-INF/view/system/dataInput/fileUpload.html
+	at com.jfinal.template.source.FileSource.getContent(FileSource.java:70)
+	at com.jfinal.template.Engine.buildTemplateBySourceFactory(Engine.java:154)
+	at com.jfinal.template.Engine.getTemplate(Engine.java:139)
+	at com.jfinal.render.TemplateRender.render(TemplateRender.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:103)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 09:22:27
+[ERROR]-[Thread: qtp1436664465-26]-[com.jfinal.core.JFinalFilter.doFilter()]: /system/dataInput/fileUpload
+java.lang.IllegalStateException: STREAM
+	at org.eclipse.jetty.server.Response.getWriter(Response.java:699)
+	at com.jfinal.render.ErrorRender.render(ErrorRender.java:59)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:141)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 09:24:36
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 09:24:37
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 09:24:37
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 09:24:38
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 09:24:40
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 09:25:23
+[ERROR]-[Thread: qtp1436664465-29]-[com.jfinal.core.ActionHandler.handle()]: /system/dataInput/fileUpload
+java.lang.RuntimeException: File not found : E:\文件\standard\standard\WebContent/WEB-INF/view/system/dataInput/fileUpload.html
+	at com.jfinal.template.source.FileSource.getContent(FileSource.java:70)
+	at com.jfinal.template.Engine.buildTemplateBySourceFactory(Engine.java:154)
+	at com.jfinal.template.Engine.getTemplate(Engine.java:139)
+	at com.jfinal.render.TemplateRender.render(TemplateRender.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:103)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 09:25:23
+[ERROR]-[Thread: qtp1436664465-29]-[com.jfinal.core.JFinalFilter.doFilter()]: /system/dataInput/fileUpload
+java.lang.IllegalStateException: STREAM
+	at org.eclipse.jetty.server.Response.getWriter(Response.java:699)
+	at com.jfinal.render.ErrorRender.render(ErrorRender.java:59)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:141)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 09:25:37
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 09:25:39
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 09:25:39
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 09:25:40
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 09:25:41
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 09:26:06
+[ERROR]-[Thread: qtp1436664465-27]-[com.jfinal.core.ActionHandler.handle()]: /system/dataInput/fileUpload
+java.lang.RuntimeException: File not found : E:\文件\standard\standard\WebContent/WEB-INF/view/system/dataInput/fileUpload.html
+	at com.jfinal.template.source.FileSource.getContent(FileSource.java:70)
+	at com.jfinal.template.Engine.buildTemplateBySourceFactory(Engine.java:154)
+	at com.jfinal.template.Engine.getTemplate(Engine.java:139)
+	at com.jfinal.render.TemplateRender.render(TemplateRender.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:103)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 09:26:06
+[ERROR]-[Thread: qtp1436664465-27]-[com.jfinal.core.JFinalFilter.doFilter()]: /system/dataInput/fileUpload
+java.lang.IllegalStateException: STREAM
+	at org.eclipse.jetty.server.Response.getWriter(Response.java:699)
+	at com.jfinal.render.ErrorRender.render(ErrorRender.java:59)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:141)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 09:28:13
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 09:28:15
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 09:28:15
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 09:28:16
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 09:28:17
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 10:22:24
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 10:22:26
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 10:22:26
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 10:22:30
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 10:22:31
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 10:23:33
+[ERROR]-[Thread: qtp1436664465-28]-[com.jfinal.core.ActionHandler.handle()]: /system/dataInput/fileUpload
+java.lang.RuntimeException: File not found : E:\文件\standard\standard\WebContent/WEB-INF/view/system/dataInput/fileUpload.html
+	at com.jfinal.template.source.FileSource.getContent(FileSource.java:70)
+	at com.jfinal.template.Engine.buildTemplateBySourceFactory(Engine.java:154)
+	at com.jfinal.template.Engine.getTemplate(Engine.java:139)
+	at com.jfinal.render.TemplateRender.render(TemplateRender.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:103)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 10:23:33
+[ERROR]-[Thread: qtp1436664465-28]-[com.jfinal.core.JFinalFilter.doFilter()]: /system/dataInput/fileUpload
+java.lang.IllegalStateException: STREAM
+	at org.eclipse.jetty.server.Response.getWriter(Response.java:699)
+	at com.jfinal.render.ErrorRender.render(ErrorRender.java:59)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:141)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 10:27:50
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 10:27:52
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 10:27:52
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 10:27:53
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 10:27:55
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 10:28:36
+[ERROR]-[Thread: qtp1436664465-28]-[com.jfinal.core.ActionHandler.handle()]: /system/dataInput/fileUpload
+java.lang.RuntimeException: File not found : E:\文件\standard\standard\WebContent/WEB-INF/view/system/dataInput/fileUpload.html
+	at com.jfinal.template.source.FileSource.getContent(FileSource.java:70)
+	at com.jfinal.template.Engine.buildTemplateBySourceFactory(Engine.java:154)
+	at com.jfinal.template.Engine.getTemplate(Engine.java:139)
+	at com.jfinal.render.TemplateRender.render(TemplateRender.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:103)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 10:28:36
+[ERROR]-[Thread: qtp1436664465-28]-[com.jfinal.core.JFinalFilter.doFilter()]: /system/dataInput/fileUpload
+java.lang.IllegalStateException: STREAM
+	at org.eclipse.jetty.server.Response.getWriter(Response.java:699)
+	at com.jfinal.render.ErrorRender.render(ErrorRender.java:59)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:141)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 10:39:30
+[ERROR]-[Thread: qtp1436664465-29]-[com.jfinal.core.ActionHandler.handle()]: /system/dataInput/fileUpload
+java.lang.RuntimeException: File not found : E:\文件\standard\standard\WebContent/WEB-INF/view/system/dataInput/fileUpload.html
+	at com.jfinal.template.source.FileSource.getContent(FileSource.java:70)
+	at com.jfinal.template.Engine.buildTemplateBySourceFactory(Engine.java:154)
+	at com.jfinal.template.Engine.getTemplate(Engine.java:139)
+	at com.jfinal.render.TemplateRender.render(TemplateRender.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:103)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 10:39:30
+[ERROR]-[Thread: qtp1436664465-29]-[com.jfinal.core.JFinalFilter.doFilter()]: /system/dataInput/fileUpload
+java.lang.IllegalStateException: STREAM
+	at org.eclipse.jetty.server.Response.getWriter(Response.java:699)
+	at com.jfinal.render.ErrorRender.render(ErrorRender.java:59)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:141)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 10:41:54
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 10:41:56
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 10:41:56
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 10:41:57
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 10:41:59
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 10:43:05
+[ERROR]-[Thread: qtp1436664465-23]-[com.jfinal.core.ActionHandler.handle()]: /system/dataInput/fileUpload
+java.lang.RuntimeException: File not found : E:\文件\standard\standard\WebContent/WEB-INF/view/system/dataInput/fileUpload.html
+	at com.jfinal.template.source.FileSource.getContent(FileSource.java:70)
+	at com.jfinal.template.Engine.buildTemplateBySourceFactory(Engine.java:154)
+	at com.jfinal.template.Engine.getTemplate(Engine.java:139)
+	at com.jfinal.render.TemplateRender.render(TemplateRender.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:103)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 10:43:05
+[ERROR]-[Thread: qtp1436664465-23]-[com.jfinal.core.JFinalFilter.doFilter()]: /system/dataInput/fileUpload
+java.lang.IllegalStateException: STREAM
+	at org.eclipse.jetty.server.Response.getWriter(Response.java:699)
+	at com.jfinal.render.ErrorRender.render(ErrorRender.java:59)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:141)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 10:44:39
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 10:44:41
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 10:44:41
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 10:44:42
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 10:44:43
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 10:45:23
+[ERROR]-[Thread: qtp1436664465-25]-[com.jfinal.core.ActionHandler.handle()]: /system/dataInput/fileUpload
+java.lang.RuntimeException: File not found : E:\文件\standard\standard\WebContent/WEB-INF/view/system/dataInput/fileUpload.html
+	at com.jfinal.template.source.FileSource.getContent(FileSource.java:70)
+	at com.jfinal.template.Engine.buildTemplateBySourceFactory(Engine.java:154)
+	at com.jfinal.template.Engine.getTemplate(Engine.java:139)
+	at com.jfinal.render.TemplateRender.render(TemplateRender.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:103)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 10:45:23
+[ERROR]-[Thread: qtp1436664465-25]-[com.jfinal.core.JFinalFilter.doFilter()]: /system/dataInput/fileUpload
+java.lang.IllegalStateException: STREAM
+	at org.eclipse.jetty.server.Response.getWriter(Response.java:699)
+	at com.jfinal.render.ErrorRender.render(ErrorRender.java:59)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:141)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 10:51:25
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 10:51:27
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 10:51:27
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 10:51:29
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 10:51:30
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 10:52:42
+[ERROR]-[Thread: qtp1436664465-24]-[com.jfinal.core.ActionHandler.handle()]: /system/dataInput/fileUpload
+java.lang.RuntimeException: File not found : E:\文件\standard\standard\WebContent/WEB-INF/view/system/dataInput/fileUpload.html
+	at com.jfinal.template.source.FileSource.getContent(FileSource.java:70)
+	at com.jfinal.template.Engine.buildTemplateBySourceFactory(Engine.java:154)
+	at com.jfinal.template.Engine.getTemplate(Engine.java:139)
+	at com.jfinal.render.TemplateRender.render(TemplateRender.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:103)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 10:52:42
+[ERROR]-[Thread: qtp1436664465-24]-[com.jfinal.core.JFinalFilter.doFilter()]: /system/dataInput/fileUpload
+java.lang.IllegalStateException: STREAM
+	at org.eclipse.jetty.server.Response.getWriter(Response.java:699)
+	at com.jfinal.render.ErrorRender.render(ErrorRender.java:59)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:141)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 10:53:50
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 10:53:51
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 10:53:51
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 10:53:52
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 10:53:53
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 10:56:54
+[ERROR]-[Thread: qtp1436664465-24]-[com.jfinal.core.ActionHandler.handle()]: /system/dataInput/fileUpload
+java.lang.RuntimeException: File not found : E:\文件\standard\standard\WebContent/WEB-INF/view/system/dataInput/fileUpload.html
+	at com.jfinal.template.source.FileSource.getContent(FileSource.java:70)
+	at com.jfinal.template.Engine.buildTemplateBySourceFactory(Engine.java:154)
+	at com.jfinal.template.Engine.getTemplate(Engine.java:139)
+	at com.jfinal.render.TemplateRender.render(TemplateRender.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:103)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 10:56:54
+[ERROR]-[Thread: qtp1436664465-24]-[com.jfinal.core.JFinalFilter.doFilter()]: /system/dataInput/fileUpload
+java.lang.IllegalStateException: STREAM
+	at org.eclipse.jetty.server.Response.getWriter(Response.java:699)
+	at com.jfinal.render.ErrorRender.render(ErrorRender.java:59)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:141)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 10:58:55
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 10:58:56
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 10:58:56
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 10:58:58
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 10:58:59
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 10:59:50
+[ERROR]-[Thread: qtp1436664465-28]-[com.jfinal.core.ActionHandler.handle()]: /system/dataInput/fileUpload
+java.lang.RuntimeException: File not found : E:\文件\standard\standard\WebContent/WEB-INF/view/system/dataInput/fileUpload.html
+	at com.jfinal.template.source.FileSource.getContent(FileSource.java:70)
+	at com.jfinal.template.Engine.buildTemplateBySourceFactory(Engine.java:154)
+	at com.jfinal.template.Engine.getTemplate(Engine.java:139)
+	at com.jfinal.render.TemplateRender.render(TemplateRender.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:103)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 10:59:50
+[ERROR]-[Thread: qtp1436664465-28]-[com.jfinal.core.JFinalFilter.doFilter()]: /system/dataInput/fileUpload
+java.lang.IllegalStateException: STREAM
+	at org.eclipse.jetty.server.Response.getWriter(Response.java:699)
+	at com.jfinal.render.ErrorRender.render(ErrorRender.java:59)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:141)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-03-22 11:05:09
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 11:05:11
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:05:11
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:05:11
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 11:05:12
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 11:11:47
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 11:11:48
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:11:48
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:11:50
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 11:11:50
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 11:14:20
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 11:14:21
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:14:21
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:14:22
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 11:14:22
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 11:15:49
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 11:15:50
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:15:50
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:15:51
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 11:15:51
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 11:31:18
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 11:31:20
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:31:20
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:31:21
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 11:31:21
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 11:31:31
+[ERROR]-[Thread: qtp475266352-25]-[com.jfinal.core.ActionHandler.handle()]: /system/dataInput/fileUpload
+com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':\file\1553225491680\286C4B001F5946BE822AD44964540AFB.txt)' at line 1
+	at com.jfinal.plugin.activerecord.DbPro.update(DbPro.java:313)
+	at com.jfinal.plugin.activerecord.DbPro.update(DbPro.java:324)
+	at com.jfinal.plugin.activerecord.Db.update(Db.java:260)
+	at com.index.input.service.DataInputService.fileChannelCopy(DataInputService.java:80)
+	at com.index.input.controller.DataInputController.fileUpload(DataInputController.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:73)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:86)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':\file\1553225491680\286C4B001F5946BE822AD44964540AFB.txt)' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.Util.getInstance(Util.java:372)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3835)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3771)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2435)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2145)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2081)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2066)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeUpdate(DruidPooledPreparedStatement.java:253)
+	at com.jfinal.plugin.activerecord.DbPro.update(DbPro.java:294)
+	at com.jfinal.plugin.activerecord.DbPro.update(DbPro.java:311)
+	... 35 more
+
+2019-03-22 11:32:39
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 11:32:40
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:32:40
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:32:41
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 11:32:42
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 11:32:50
+[ERROR]-[Thread: qtp475266352-24]-[com.jfinal.core.ActionHandler.handle()]: /system/dataInput/fileUpload
+com.jfinal.plugin.activerecord.ActiveRecordException: java.sql.SQLException: Column count doesn't match value count at row 1
+	at com.jfinal.plugin.activerecord.DbPro.update(DbPro.java:313)
+	at com.jfinal.plugin.activerecord.DbPro.update(DbPro.java:324)
+	at com.jfinal.plugin.activerecord.Db.update(Db.java:260)
+	at com.index.input.service.DataInputService.fileChannelCopy(DataInputService.java:80)
+	at com.index.input.controller.DataInputController.fileUpload(DataInputController.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:73)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:86)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.sql.SQLException: Column count doesn't match value count at row 1
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:998)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3835)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3771)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2435)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2145)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2081)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2066)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeUpdate(DruidPooledPreparedStatement.java:253)
+	at com.jfinal.plugin.activerecord.DbPro.update(DbPro.java:294)
+	at com.jfinal.plugin.activerecord.DbPro.update(DbPro.java:311)
+	... 35 more
+
+2019-03-22 11:34:14
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 11:34:15
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:34:15
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:34:16
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 11:34:17
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 11:34:28
+[ERROR]-[Thread: qtp475266352-24]-[com.jfinal.core.ActionHandler.handle()]: /system/dataInput/fileUpload
+com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column '4FFA948774B2431EB70D067AC7E856A9' in 'field list'
+	at com.jfinal.plugin.activerecord.DbPro.update(DbPro.java:313)
+	at com.jfinal.plugin.activerecord.DbPro.update(DbPro.java:324)
+	at com.jfinal.plugin.activerecord.Db.update(Db.java:260)
+	at com.index.input.service.DataInputService.fileChannelCopy(DataInputService.java:80)
+	at com.index.input.controller.DataInputController.fileUpload(DataInputController.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:73)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:86)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column '4FFA948774B2431EB70D067AC7E856A9' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.Util.getInstance(Util.java:372)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3835)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3771)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2435)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2145)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2081)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2066)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeUpdate(DruidPooledPreparedStatement.java:253)
+	at com.jfinal.plugin.activerecord.DbPro.update(DbPro.java:294)
+	at com.jfinal.plugin.activerecord.DbPro.update(DbPro.java:311)
+	... 35 more
+
+2019-03-22 11:35:15
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 11:35:17
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:35:17
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:35:18
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 11:35:18
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 11:35:27
+[ERROR]-[Thread: qtp475266352-24]-[com.jfinal.core.ActionHandler.handle()]: /system/dataInput/fileUpload
+com.jfinal.plugin.activerecord.ActiveRecordException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column '3ACEAD9543A34D20B768A96FCC447589' in 'field list'
+	at com.jfinal.plugin.activerecord.DbPro.update(DbPro.java:313)
+	at com.jfinal.plugin.activerecord.DbPro.update(DbPro.java:324)
+	at com.jfinal.plugin.activerecord.Db.update(Db.java:260)
+	at com.index.input.service.DataInputService.fileChannelCopy(DataInputService.java:80)
+	at com.index.input.controller.DataInputController.fileUpload(DataInputController.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.jfinal.aop.Invocation.invoke(Invocation.java:73)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:86)
+	at com.jfinal.ext.handler.ContextPathHandler.handle(ContextPathHandler.java:48)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column '3ACEAD9543A34D20B768A96FCC447589' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.Util.getInstance(Util.java:372)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3835)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3771)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2435)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2145)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2081)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2066)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeUpdate(DruidPooledPreparedStatement.java:253)
+	at com.jfinal.plugin.activerecord.DbPro.update(DbPro.java:294)
+	at com.jfinal.plugin.activerecord.DbPro.update(DbPro.java:311)
+	... 35 more
+
+2019-03-22 11:39:07
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 11:39:08
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:39:08
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:39:12
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 11:39:12
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 11:43:28
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 11:43:29
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:43:29
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:43:30
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 11:43:31
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 11:45:52
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 11:45:54
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:45:54
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:45:56
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 11:45:57
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 11:50:31
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 11:50:32
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:50:32
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 11:50:34
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 11:50:34
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 13:14:31
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 13:14:33
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 13:14:33
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 13:14:54
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 13:14:55
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 13:16:55
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 13:16:57
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 13:16:57
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 13:16:59
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 13:17:00
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 13:20:25
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 13:20:27
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 13:20:27
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 13:20:31
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 13:20:31
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 13:21:53
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 13:21:55
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 13:21:55
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 13:22:02
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 13:22:03
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 13:23:59
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 13:24:01
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 13:24:01
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 13:24:11
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 13:24:11
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 13:26:15
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 13:26:17
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 13:26:17
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 13:26:18
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 13:26:19
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 14:02:58
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 14:02:59
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 14:02:59
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 14:03:00
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 14:03:01
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 14:03:43
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 14:03:44
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 14:03:44
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 14:03:45
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 14:03:47
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 14:04:40
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 14:04:42
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 14:04:42
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 14:04:43
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 14:04:44
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 14:04:56
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 14:04:58
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 14:04:58
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 14:04:59
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 14:05:00
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 14:07:07
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 14:07:08
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 14:07:08
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 14:07:09
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 14:07:10
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 14:42:05
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 14:42:06
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 14:42:06
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 14:42:07
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 14:42:08
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 14:44:21
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 14:44:23
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 14:44:23
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 14:44:24
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 14:44:25
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 14:51:43
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 14:51:45
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 14:51:45
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 14:51:46
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 14:51:47
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 14:55:52
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 14:55:53
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 14:55:53
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 14:56:13
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 14:56:13
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 15:01:45
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 15:01:46
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 15:01:46
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 15:01:47
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 15:01:48
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 15:04:52
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 15:04:53
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 15:04:53
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 15:04:54
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 15:04:55
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 15:36:33
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 15:36:35
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 15:36:35
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 15:36:39
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 15:36:39
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 15:38:05
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 15:38:06
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 15:38:06
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 15:38:12
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 15:38:12
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 15:40:35
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 15:40:36
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 15:40:36
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 15:40:37
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 15:40:38
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 15:44:18
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 15:44:19
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 15:44:19
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 15:44:20
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 15:44:21
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 15:45:14
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 15:45:15
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 15:45:15
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 15:45:16
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 15:45:17
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084
+
+2019-03-22 15:46:13
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.Server.doStart()]: jetty-8.y.z-SNAPSHOT
+
+2019-03-22 15:46:14
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 15:46:14
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized()]: started o.e.j.w.WebAppContext{/,file:/E:/文件/standard/standard/WebContent/}
+
+2019-03-22 15:46:15
+[INFO]-[Thread: main]-[com.alibaba.druid.pool.DruidDataSource.init()]: {dataSource-1} inited
+
+2019-03-22 15:46:15
+[INFO]-[Thread: main]-[org.eclipse.jetty.server.AbstractConnector.doStart()]: Started SelectChannelConnector@0.0.0.0:8084

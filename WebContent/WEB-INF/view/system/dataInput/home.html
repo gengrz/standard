@@ -1,0 +1,117 @@
+#include("../admin/content_layout.html")
+
+<!-- 调用layout函数 -->
+#@layout()
+<!-- 引入额外的css -->
+#define css()
+ 
+#end
+
+<!-- 引入额外的js -->
+#define js() #end
+<!-- 主体内容 -->
+#define content()
+<div class="layui-fluid">
+    <div class="layui-row">
+      <div class="layui-col-md6 layui-col-md-offset6">
+        <div class="layui-form" lay-filter="component-form-element">
+          <div class="layui-card-body layui-row layui-col-space12">
+            <div class="layui-col-md4">
+              <select name="city" lay-verify="">
+                <option value="">请选择数据类型</option>
+                #for(x:dataSources)
+                <option value="#(x.columns.classid)">#(x.columns.classname)</option>
+                #end
+              </select>
+            </div>
+            <div class="layui-col-md4">
+			    <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+  			</div>
+  			<div class="layui-col-md2">
+  				<button class="layui-btn">搜索</button>
+  			</div>
+  			<div class="layui-col-md2">
+  				<a lay-href="/system/dataInput/getAddDataPage" class="layui-btn">添加</a>
+  			</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div style="padding: 20px; background-color: #F2F2F2;">
+	  <div class="layui-row layui-col-space15">
+		  #for(x:dataSources)
+	      	<div class="layui-col-md2">
+		      <div class="layui-card">
+		        <div class="layui-card-header">#(x.columns.classname)</div>
+		        <div class="layui-card-body">
+		          #(x.columns.classdesc)
+		        </div>
+		      </div>
+		    </div>
+	      #end
+	  </div>
+	</div> 
+    
+    <div class="layui-row layui-col-space15">
+    	<div class="layui-col-md12">
+    		<table class="layui-hide" id="dg"></table>
+    	</div>
+    </div>
+  </div>
+
+#end
+
+
+<!-- 引入额外的js -->
+#define imp_js()
+	<script>
+		//数据表格
+		layui.use('table', function(){
+			  var table = layui.table;
+			  
+			  table.render({
+			    elem: '#dg'
+			    ,url:'/system/dataInput/queryDataGrid/'
+			    ,cellMinWidth: 80 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
+			    ,cols: [[
+			      {field:'data_source_name', width:'25%', title: '数据源'}
+			      ,{field:'data_source_key', width:'15%', title: '标识'}
+			      ,{field:'believe_level', width:'10%', title: '置信度'}
+			      ,{field:'classname', width:'20%', title: '所属分类'}
+			      ,{field:'creater_time', title: '接入时间', width: '25%'} //minWidth：局部定义当前单元格的最小宽度，layui 2.2.1 新增
+			      ,{field:'data_source_id',width:'5%', title: '操作',templet: function(d){
+			          return '<a lay-href="#"><i class="layui-icon layui-icon-set"></i></a>  ';
+			      }}
+			      
+			    ]]
+			  });
+			});
+		
+		function addData(){
+			
+		}
+		
+		
+		layui.config({
+		    base: '/js/layuiadmin/' //静态资源所在路径
+		  }).extend({
+		    index: 'lib/index' //主入口模块
+		  }).use(['index', 'form'], function(){
+		    var $ = layui.$
+		    ,admin = layui.admin
+		    ,element = layui.element
+		    ,form = layui.form;
+		    
+		    form.render(null, 'component-form-element');
+		    element.render('breadcrumb', 'breadcrumb');
+		    
+		    form.on('submit(component-form-element)', function(data){
+		      layer.msg(JSON.stringify(data.field));
+		      return false;
+		    });
+		  });
+	</script>
+#end
+ 
+ 

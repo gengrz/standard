@@ -1,0 +1,128 @@
+#include("/common/admin_layout.html")
+
+<!-- 调用layout函数 -->
+#@layout()
+<!-- 引入额外的css -->
+#define css()
+ 
+#end
+
+<!-- 引入额外的js -->
+#define js() #end
+<!-- 主体内容 -->
+#define content()
+  <style>
+  /* 这段样式只是用于演示 */
+  #LAY-component-grid-list .demo-list .layui-card{height: 267px;}
+  </style>
+  <div class="layui-fluid" id="LAY-component-grid-list">
+    <div class="layui-row layui-col-space10 demo-list">
+      <div class="layui-col-sm4 layui-col-md3 layui-col-lg2">
+        <!-- 填充内容 -->
+        <div class="layui-card">
+          
+        </div>
+      </div>
+      <div class="layui-col-sm4 layui-col-md3 layui-col-lg2">
+        <div class="layui-card">
+          
+        </div>
+      </div>
+      <div class="layui-col-sm4 layui-col-md3 layui-col-lg2">
+        <div class="layui-card">
+          
+        </div>
+      </div>
+      <div class="layui-col-sm4 layui-col-md3 layui-col-lg2">
+        <div class="layui-card">
+          
+        </div>
+      </div>
+      <div class="layui-col-sm4 layui-col-md3 layui-col-lg2">
+        <div class="layui-card">
+          
+        </div>
+      </div>
+      <div class="layui-col-sm4 layui-col-md3 layui-col-lg2">
+        <div class="layui-card">
+          
+        </div>
+      </div>
+      <div class="layui-col-sm4 layui-col-md3 layui-col-lg2">
+        <div class="layui-card">  
+          
+        </div>
+      </div>
+      <div class="layui-col-sm4 layui-col-md3 layui-col-lg2">
+        <div class="layui-card">
+          
+        </div>
+      </div>
+      <div class="layui-col-sm4 layui-col-md3 layui-col-lg2">
+        <div class="layui-card">
+          
+        </div>
+      </div>
+      <div class="layui-col-sm4 layui-col-md3 layui-col-lg2">
+        <div class="layui-card">
+          
+        </div>
+      </div>
+      <div class="layui-col-sm4 layui-col-md3 layui-col-lg2">
+        <div class="layui-card">
+          
+        </div>
+      </div>
+      <div class="layui-col-sm4 layui-col-md3 layui-col-lg2">
+        <div class="layui-card">
+          
+        </div>
+      </div>
+      <div class="layui-col-sm4 layui-col-md3 layui-col-lg2">
+        <div class="layui-card">
+          
+        </div>
+      </div>
+      <div class="layui-col-sm4 layui-col-md3 layui-col-lg2">
+        <div class="layui-card">
+          
+        </div>
+      </div>
+      <div class="layui-col-sm4 layui-col-md3 layui-col-lg2">
+        <div class="layui-card">
+          
+        </div>
+      </div>
+      <div class="layui-col-sm4 layui-col-md3 layui-col-lg2">
+        <div class="layui-card">
+          
+        </div>
+      </div>
+      <div class="layui-col-sm4 layui-col-md3 layui-col-lg2">
+        <div class="layui-card">
+          
+        </div>
+      </div>
+      <div class="layui-col-sm4 layui-col-md3 layui-col-lg2">
+        <div class="layui-card">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+#end
+
+
+<!-- 引入额外的js -->
+#define imp_js()
+  <script>
+  layui.config({
+    base: '/js/layuiadmin/' //静态资源所在路径
+  }).extend({
+    index: 'lib/index' //主入口模块
+  }).use(['index']);
+  </script>
+#end
+ 
+ 

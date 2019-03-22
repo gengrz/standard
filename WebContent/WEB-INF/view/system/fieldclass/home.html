@@ -1,0 +1,88 @@
+#include("../admin/content_layout.html")
+
+<!-- 调用layout函数 -->
+#@layout()
+<!-- 引入额外的css -->
+#define css()
+ 
+#end
+
+<!-- 引入额外的js -->
+#define js() #end
+<!-- 主体内容 -->
+#define content()
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+      <div>    
+		 <iframe id="iframe1" src="/system/field/field" frameborder="0" class="layui-col-md10" height="600px"></iframe>
+      </div>
+      <div class="layui-col-md2">
+        
+        <div class="layui-card">
+          <div class="layui-card-header">数据元类型</div>
+          <div class="layui-card-body">
+            <ul class="layui-row layuiadmin-card-team">
+              #for(x:fieldtype) 
+              <li class="layui-col-xs12">
+                <a href="#" id="#(x.columns.classid)" onclick="test('#(x.columns.classid)','#(x.columns.path)')">
+                  <span class="layui-team-img"><img src=""></span> 
+                  <span>#(x.columns.classname)</span>
+                </a>
+              </li>
+              #end
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+#end
+
+
+<!-- 引入额外的js -->
+#define imp_js()
+	<script>
+	    var fieldtype = #(fieldtype);
+	    console.log(fieldtype);
+	     
+
+		layui.config({
+			base : '/js/layuiadmin/' //静态资源所在路径
+		}).extend({
+			index : 'lib/index' //主入口模块
+		}).use([ 'index', 'sample' ]);
+		
+        //JavaScript代码区域
+        layui.use('element', function () {
+            var $ = layui.jquery
+                , element = layui.element;          
+        });
+       function test(id,path){
+    	   console.log(id);
+    	   $("#"+id).click(function () {
+    		   console.log(id+path);
+            $("#iframe1").attr("src",path)
+        });
+       }
+        	/* var id = fieldtype[i].columns.classid;
+        	var path = fieldtype[i].columns.path;
+        	console.log(id+"-"+path);
+        	$("#"+id).click(function () {
+        		   console.log(id+path);
+                $("#iframe1").attr("src",path)
+            }); */
+		/* } */
+    	/* $("#1").click(function () {
+    		   console.log("1111");
+            $("#iframe1").attr("src", "/system/field/field")
+        });
+    	$("#2").click(function () {
+    		   console.log("1111");
+            $("#iframe1").attr("src", "/system/field/field2")
+        }); */
+	
+	</script>
+#end
+ 
+ 

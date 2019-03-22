@@ -1,0 +1,27 @@
+ #define layout()
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>标准化平台</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" href="/js/layuiadmin/layui/css/layui.css" media="all">
+<link rel="stylesheet" href="/js/layuiadmin/style/admin.css" media="all">
+<script src="#(ctx??)/js/jquery-1.11.0.js"></script>
+#@css?() #@js?()
+<script type="text/javascript">
+	var ctx = "#(ctx??)";
+</script>
+</head>
+<body>
+	#@content()
+	<script src="/js/layuiadmin/layui/layui.js?t=1"></script>
+	#@imp_js?()
+</body>
+</html>
+#end
+ 
+
+ 

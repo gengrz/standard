@@ -1,0 +1,105 @@
+package #(package);
+
+import com.book.common.model.#(className);
+import com.frame.base.BaseController;
+import com.frame.ext.plugin.shiro.ClearShiro;
+import com.jfinal.aop.Before;
+import com.jfinal.kit.Kv;
+import com.jfinal.plugin.activerecord.Page;
+import com.jfinal.plugin.activerecord.tx.Tx;
+/**
+ * #(className) 管理	
+ * 描述：	@ClearShiro
+ * #(date)
+ */
+public class #(className)Controller extends   BaseController  {
+
+	private #(className)Service srv = #(className)Service.me;
+
+	/**
+	 * 列表页面
+	 * 
+	 * @throws Exception
+	 */
+	public void list() throws Exception {
+		render("#(classNameSmall)List.html");
+	}	
+	/**
+	 * 列表数据
+	 */
+	public void listJson() throws Exception {
+		//前台查询输入框参数获取
+	//	String name = getPara("name","");
+		//前台排序参数获取
+		String sort = getPara("sort", "id");
+		String order = getPara("order", "desc");
+		// 查询条件 caption like ? ", "%"+"关键字"+"%");
+		Kv param = Kv.create();
+	//	param.set("name like", "%"+name+"%");
+		 
+		Kv cond = Kv.by("cond", param);
+		// 增加排序方式
+		cond.set("sort", sort).set("order", order);
+
+		Integer pageNumber = getParaToInt("page", 1);
+		Integer limit = getParaToInt("limit", 10);
+		Page<#(className)> data = srv.pageList(pageNumber, limit, cond);
+		renderJson(json(data.getList(), data.getTotalRow()));
+	}
+	
+	public void add() {
+		render("#(classNameSmall)Add.html");
+	}
+	@Before(Tx.class)
+	public void save() {
+		#(className) #(classNameSmall) = getModel(#(className).class, "", true);
+ //		#(classNameSmall).setCreateTime(new Date());
+ 		String msg="保存成功";
+ 		//主键是否为空
+		if(#(classNameSmall).getId()!=null){
+			#(classNameSmall).update();
+			msg="更新成功";
+		}else{
+			#(classNameSmall).save();
+		}
+		
+		renderJson(success(msg));
+	}
+	public void edit() {
+		String id = getPara();
+		#(className) #(classNameSmall) = srv.findById(id);
+		setAttr("#(classNameSmall)", #(classNameSmall));
+		render("#(classNameSmall)Add.html");
+	}
+	
+	
+	/**
+	 * 单条删除
+	 */
+	@Before(Tx.class)
+	public void del() {
+		Object id = getPara("id");
+		int flag = srv.deleteById(id);
+		renderJson(json(flag));
+
+	}
+
+	/**
+	 * 批量删除
+	 */
+	@Before(Tx.class)
+	public void batchDel() {
+		String ids = getPara("ids");
+		String[] idsArr = ids.split(",");
+		Kv cond = Kv.by("ids", idsArr);
+		int row = srv.batchDel(cond);
+		if (row > 0) {
+			renderJson(json(true));
+		} else {
+			renderJson(json(false));
+		}
+
+	}
+	
+	 
+}

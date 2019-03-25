@@ -1,0 +1,90 @@
+package #(package);
+
+import java.util.ArrayList;
+import com.book.common.model.#(className);
+import com.jfinal.aop.Enhancer;
+import com.jfinal.kit.Kv;
+import com.jfinal.log.Log;
+import com.jfinal.plugin.activerecord.Db;
+import com.jfinal.plugin.activerecord.Page;
+import com.jfinal.plugin.activerecord.SqlPara;;
+/**
+ * #(className) 管理	#(date)
+ * 描述：
+ */
+public class #(className)Service {
+
+	public Log logger = Log.getLog(#(className)Service.class);
+	
+	public static final #(className)Service me = Enhancer.enhance(#(className)Service.class);
+	
+	// dao 对象只让本业务使用，其它要用它的地方统统在业务层创建方法来转调
+	private final  #(className) dao = new  #(className)();
+	
+	
+	
+	/**
+	 * 分页列表
+	 * 
+	 * @param pageNumber
+	 * @param pageSize
+	 * @param cond
+	 * @return Page
+	 */
+	public Page<#(className)> pageList(int pageNumber, int pageSize, Kv cond) {
+		SqlPara sqlPara = dao.getSqlPara("#(classNameSmall).pageList", cond);
+		Page<#(className)> pu = dao.paginate(pageNumber, pageSize, sqlPara);
+		//dao.paginate(pageNumber, pageSize, sqlPara);
+		return pu;
+	}
+	/**
+	 * 分页列表
+	 * 
+	 * @return 全部list
+	 */
+	public ArrayList<#(className)> getAll() {
+		return (ArrayList<#(className)>) dao.find("select * from #(tableName) order by id asc");
+	}
+	/**
+	 * 批量删除
+	 * 
+	 * @param cond
+	 * @return
+	 */
+	public int batchDel(Kv cond) {
+		SqlPara sqlPara = dao.getSqlPara("#(classNameSmall).batchDel", cond);
+		return Db.update(sqlPara);
+
+	}
+ 
+	/**
+	* 保存
+	*/
+	public void save(#(className) #(classNameSmall)) {
+		#(classNameSmall).save();
+	}
+	
+	/**
+	* 更新
+	*/
+	public void update(#(className) #(classNameSmall)) {
+		#(classNameSmall).update();
+	}
+	
+	/**
+	* 查询
+	*/
+	public #(className) findById(Object idValue) {
+		return dao.findById(idValue);
+	}
+	
+	/**
+	* 删除
+	*/
+	public int deleteById(Object #(classNameSmall)Id) {
+		int res=Db.update("delete from #(tableName) where id=?", #(classNameSmall)Id);
+		return res;
+	}
+	
+	
+}

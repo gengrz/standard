@@ -3,6 +3,10 @@ package com.cf.route;
 
 
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+import com.cf._MappingSet;
 import com.jfinal.config.Constants;
 import com.jfinal.config.Handlers;
 import com.jfinal.config.Interceptors;
@@ -11,6 +15,7 @@ import com.jfinal.config.Plugins;
 import com.jfinal.config.Routes;
 import com.jfinal.core.JFinal;
 import com.jfinal.ext.handler.ContextPathHandler;
+import com.jfinal.kit.PathKit;
 import com.jfinal.kit.PropKit;
 import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
 import com.jfinal.plugin.druid.DruidPlugin;
@@ -59,11 +64,22 @@ public class BookingConfig extends JFinalConfig {
 		DruidPlugin druidPlugin = createDruidPlugin();
 		me.add(druidPlugin);
 
+		
+		
 		// 配置ActiveRecord插件
 		ActiveRecordPlugin arp = new ActiveRecordPlugin(druidPlugin);
+		// sql 模板的添加
+
+		String webRootPath = PathKit.getRootClassPath();// 获取项目跟路径
+		Path absoluteWebPath = Paths.get(webRootPath, "/sql");// 获取项目绝对根路径
+		arp.setBaseSqlTemplatePath(absoluteWebPath.toString());
+		arp.addSqlTemplate("/all.sql");
+		// 所有映射在 MappingKit 中自动化搞定
+		_MappingSet.mapping(arp);
 		me.add(arp);
 		// me.add(new ShiroPlugin());
 		me.add(new EhCachePlugin());
+	
 		
 	}
 
@@ -93,7 +109,7 @@ public class BookingConfig extends JFinalConfig {
 		/**
 		 * 特别注意：Eclipse 之下建议的启动方式
 		 */
-		JFinal.start("WebContent", 8084, "/");
+		JFinal.start("WebContent", 8085, "/");
 
 	}
 

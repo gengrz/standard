@@ -1,0 +1,75 @@
+#[[
+#include("/common/admin_layout.html")
+
+<!-- 调用layout函数 -->
+#@layout()
+<!-- 引入额外的css -->
+#define css() #end
+
+<!-- 引入额外的js -->
+#define js() #end
+<!-- 主体内容 -->
+#define content()
+]]#
+<div class="layui-fluid">
+	<div class="layui-card">
+		<div class="layui-form layui-card-header layuiadmin-card-header-auto">
+			<div class="layui-form-item">
+				<div class="layui-inline">
+					<label class="layui-form-label">手机号</label>
+					<div class="layui-input-block">
+						<input type="text" name="mobile_phone" placeholder="请输入" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+				<div class="layui-inline">
+					<label class="layui-form-label">身份证号</label>
+					<div class="layui-input-block">
+						<input type="text" name="id_number" placeholder="请输入" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+
+				<div class="layui-inline">
+					<button class="layui-btn" lay-submit lay-filter="LAY-#(classNameSmall)-search">
+						<i class="layui-icon layui-icon-search layuiadmin-button-btn"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="layui-card-body">
+			<div style="padding-bottom: 10px;">
+				<button class="layui-btn #(classNameSmall)Add_btn">添&nbsp;加</button>
+				<button class="layui-btn layui-btn-danger batchDel_btn">批量删除</button>
+			</div>
+
+			<table id="LAY-#(classNameSmall)-manage" lay-filter="LAY-#(classNameSmall)-manage"></table>
+
+			
+			<!--操作-->
+			<script type="text/html" id="#(classNameSmall)ListBar">
+			<a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+			<a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del">删除</a>
+			</script>
+			
+
+		</div>
+	</div>
+</div>
+
+#[[
+#end
+
+
+<!-- 引入额外的js -->
+#define imp_js()
+]]#
+<script type="text/javascript" src="#(ctx??)/static/#(basePath)/#(classNameSmall).js"></script>
+<script>
+	
+</script>
+#[[
+#end
+]]#
+
+
+

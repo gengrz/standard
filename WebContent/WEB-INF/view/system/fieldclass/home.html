@@ -14,7 +14,7 @@
 <div class="layui-fluid">
     <div class="layui-row layui-col-space15">
       <div>    
-		 <iframe id="iframe1" src="/system/field/field" frameborder="0" class="layui-col-md10" height="600px"></iframe>
+		 <iframe id="iframe1" src="/system/fieldManager/list?id=1&type=人物属性" frameborder="0" class="layui-col-md10" height="800px"></iframe>
       </div>
       <div class="layui-col-md2">
         
@@ -24,7 +24,7 @@
             <ul class="layui-row layuiadmin-card-team">
               #for(x:fieldtype) 
               <li class="layui-col-xs12">
-                <a href="#" id="#(x.columns.classid)" onclick="test('#(x.columns.classid)','#(x.columns.path)')">
+                <a href="#" id="#(x.columns.classid)" onclick="test('#(x.columns.classid)','#(x.columns.path)','#(x.columns.classname)')">
                   <span class="layui-team-img"><img src=""></span> 
                   <span>#(x.columns.classname)</span>
                 </a>
@@ -58,29 +58,12 @@
             var $ = layui.jquery
                 , element = layui.element;          
         });
-       function test(id,path){
+       
+       function test(id,path,classname){
     	   console.log(id);
-    	   $("#"+id).click(function () {
-    		   console.log(id+path);
+    		   path = path+"?id="+id+"&type="+classname;
             $("#iframe1").attr("src",path)
-        });
        }
-        	/* var id = fieldtype[i].columns.classid;
-        	var path = fieldtype[i].columns.path;
-        	console.log(id+"-"+path);
-        	$("#"+id).click(function () {
-        		   console.log(id+path);
-                $("#iframe1").attr("src",path)
-            }); */
-		/* } */
-    	/* $("#1").click(function () {
-    		   console.log("1111");
-            $("#iframe1").attr("src", "/system/field/field")
-        });
-    	$("#2").click(function () {
-    		   console.log("1111");
-            $("#iframe1").attr("src", "/system/field/field2")
-        }); */
 	
 	</script>
 #end

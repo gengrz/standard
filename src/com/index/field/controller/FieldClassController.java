@@ -5,6 +5,8 @@ import java.util.List;
 
 import com.cf.base.BaseController;
 import com.index.field.service.FieldClassService;
+import com.jfinal.kit.Kv;
+import com.jfinal.plugin.activerecord.Page;
 import com.jfinal.plugin.activerecord.Record;
 
 import cn.hutool.json.JSONUtil;
@@ -32,11 +34,7 @@ public class FieldClassController extends   BaseController  {
 		render("home.html");
 	}
 
-	public void field() {
-		
-		setAttr("type","-人物属性");
-		render("field.html");
-	}
+	
 	public void field2() {
 		setAttr("type","-虚拟属性");
 		render("field.html");

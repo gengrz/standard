@@ -1,0 +1,114 @@
+
+#include("/common/admin_layout.html")
+
+<!-- 调用layout函数 -->
+#@layout()
+<!-- 引入额外的css -->
+#define css() #end
+
+<!-- 引入额外的js -->
+#define js() #end
+<!-- 主体内容 -->
+#define content()
+
+<div class="layui-form" lay-filter="layuiadmin-form-fieldManager" style="padding: 20px 0 0 0; width: 80%;">
+
+	<div class="layui-hide">
+		<input type="hidden" name="fieldid" value="#(fieldManager.fieldid??)">
+	</div>
+					<div class="layui-form-item">
+			<div class="layui-col-md6 layui-col-xs12">
+				<label class="layui-form-label">字段名称(中文)</label>
+				<div class="layui-input-block">
+					<input type="text" class="layui-input " name="fieldname" value="#(fieldManager.fieldname??)"   	lay-verify="required" placeholder="请输入字段名称(中文)">
+				</div>
+			</div>
+			 
+			<div class="layui-col-md6 layui-col-xs12">
+				<label class="layui-form-label">字段标识(英文)</label>
+				<div class="layui-input-block">
+					<input type="text" class="layui-input " name="fieldid" value="#(fieldManager.fieldid??)"   	lay-verify="required" placeholder="请输入字段标识(英文)">
+				</div>
+			</div>
+			 
+			</div>
+					<div class="layui-form-item">
+			<div class="layui-col-md6 layui-col-xs12">
+				<label class="layui-form-label">字段类型</label>
+				<div class="layui-input-block">
+					<input type="text" class="layui-input " name="fieldtype" value="#(fieldManager.fieldtype??)"   	lay-verify="required" placeholder="请输入字段类型">
+				</div>
+			</div>
+			 
+			<div class="layui-col-md6 layui-col-xs12">
+				<label class="layui-form-label">字段描述</label>
+				<div class="layui-input-block">
+					<input type="text" class="layui-input " name="fielddesc" value="#(fieldManager.fielddesc??)"   	lay-verify="required" placeholder="请输入字段描述">
+				</div>
+			</div>
+			 
+			</div>
+					<div class="layui-form-item">
+			<div class="layui-col-md6 layui-col-xs12">
+				<label class="layui-form-label">字段类别</label>
+				<div class="layui-input-block">
+					<input type="text" class="layui-input " name="fieldclass" value="#(fieldManager.fieldclass??)"   	lay-verify="required" placeholder="请输入字段类别">
+				</div>
+			</div>
+			 
+			<div class="layui-col-md6 layui-col-xs12">
+				<label class="layui-form-label">状态(0可用，1不可用)</label>
+				<div class="layui-input-block">
+					<input type="text" class="layui-input " name="state" value="#(fieldManager.state??)"   	lay-verify="required" placeholder="请输入状态(0可用，1不可用)">
+				</div>
+			</div>
+			 
+			</div>
+ 
+	 
+ 
+ 
+	<div class="layui-form-item  layui-col-xs12">
+		<div class="layui-input-block">
+			<button class="layui-btn layui-btn-sm" lay-submit="" lay-filter="addFieldManager">立即保存</button>
+			<button type="reset" class="layui-btn layui-btn-sm layui-btn-primary">重置</button>
+		</div>
+	</div>
+</div>
+
+
+#end
+
+
+<!-- 引入额外的js -->
+#define imp_js()
+<script type="text/javascript" src="/static/system/fieldManager.js"></script>
+<script>
+layui.use([ 'index','table', 'form'], function() {
+	var $ = layui.$, form = layui.form, table = layui.table;
+
+	form.on("submit(addFieldManager)", function(data) {
+		// 弹出loading
+		var index2 = top.layer.msg('数据提交中，请稍候', {
+			icon : 16,
+			time : false,
+			shade : 0.8
+		});
+		
+		// 提交
+		$.post(ctx + "/system/fieldManager/save", data.field, function(data) {
+			top.layer.close(index2);
+			layer.msg(data.message, {time: 1000 
+				}, function() {
+				var iframe = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+				parent.layer.close(iframe); //再执行关闭   
+			});
+		});
+
+		return false;
+	});
+});
+</script>
+
+
+#end

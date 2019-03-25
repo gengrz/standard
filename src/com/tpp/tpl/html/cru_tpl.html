@@ -1,0 +1,82 @@
+#[[
+#include("/common/admin_layout.html")
+
+<!-- 调用layout函数 -->
+#@layout()
+<!-- 引入额外的css -->
+#define css() #end
+
+<!-- 引入额外的js -->
+#define js() #end
+<!-- 主体内容 -->
+#define content()
+]]#
+<div class="layui-form" lay-filter="layuiadmin-form-#(classNameSmall)" style="padding: 20px 0 0 0; width: 80%;">
+
+	<div class="layui-hide">
+		<input type="hidden" name="id" value="#[[#]]#(#(classNameSmall).#(tablemeta.primaryKey)??)">
+	</div>
+		#for(x : tablemeta.columnMetas)
+			#if(for.odd)
+					<div class="layui-form-item">
+			#end
+			<div class="layui-col-md6 layui-col-xs12">
+				<label class="layui-form-label">#if(x.remarks)#(x.remarks)#else#(x.name)#end</label>
+				<div class="layui-input-block">
+					<input type="text" class="layui-input " name="#(x.name)" value="#("#")(#(classNameSmall).#(x.name)??)"   	lay-verify="required" placeholder="请输入#if(x.remarks)#(x.remarks)#else#(x.name)#end">
+				</div>
+			</div>
+			 
+			#if(for.even||for.last )
+			</div>
+			#end
+		#end
+ 
+	 
+ 
+ 
+	<div class="layui-form-item  layui-col-xs12">
+		<div class="layui-input-block">
+			<button class="layui-btn layui-btn-sm" lay-submit="" lay-filter="add#(className)">立即保存</button>
+			<button type="reset" class="layui-btn layui-btn-sm layui-btn-primary">重置</button>
+		</div>
+	</div>
+</div>
+
+#[[
+#end
+
+
+<!-- 引入额外的js -->
+#define imp_js()]]#
+<script type="text/javascript" src="#(ctx??)/static/#(basePath)/#(classNameSmall).js"></script>
+<script>
+layui.use([ 'index','table', 'form'], function() {
+	var $ = layui.$, form = layui.form, table = layui.table;
+
+	form.on("submit(add#(className))", function(data) {
+		// 弹出loading
+		var index2 = top.layer.msg('数据提交中，请稍候', {
+			icon : 16,
+			time : false,
+			shade : 0.8
+		});
+		
+		// 提交
+		$.post(ctx + "/#(basePath)/#(classNameSmall)/save", data.field, function(data) {
+			top.layer.close(index2);
+			layer.msg(data.message, {time: 1000 
+				}, function() {
+				var iframe = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+				parent.layer.close(iframe); //再执行关闭   
+			});
+		});
+
+		return false;
+	});
+});
+</script>
+
+#[[
+#end
+]]#

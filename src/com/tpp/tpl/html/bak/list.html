@@ -1,0 +1,54 @@
+#[[
+#include("../common/_layout.html")
+
+<!-- 调用layout函数 -->
+#@layout()
+<!-- 引入额外的css -->
+#define css()
+<style>
+</style>
+#end
+
+<!-- 引入额外的js -->
+#define js() #end
+<!-- 主体内容 -->
+#define content()
+
+]]#
+<div class="layui-main">
+	<span class="layui-breadcrumb" style="visibility: visible;">
+		<a><cite>基础业务</cite><span class="layui-box">&gt;</span></a>
+		<a><cite>#(classNameSmall)列表</cite></a>
+	</span>
+	<blockquote class="layui-elem-quote news_search">
+		<div class="layui-inline">
+			<div class="layui-input-inline">
+				<input id="#(classNameSmall)_data"   type="hidden">
+				<input type="text" name="name"  placeholder="名称" class="layui-input search_input">
+			</div>
+			<button class="layui-btn search_btn">
+				<i class="layui-icon" style="top: 4px; right: 5px;">&#xe615;</i>搜索
+			</button>
+
+		</div>
+		<div class="layui-inline">
+			<a class="layui-btn layui-btn-normal #(classNameSmall)_add_btn">添加</a>
+		</div>
+		<div class="layui-inline">
+			<a class="layui-btn layui-btn-danger batchDel">批量删除</a>
+		</div>
+		<div class="layui-inline">
+			<div class="layui-form-mid layui-word-aux"></div>
+		</div>
+	</blockquote>
+
+	<table id="#(classNameSmall)List" lay-filter="#(classNameSmall)List"></table>
+</div>
+<script type="text/html" id="#(classNameSmall)Bar">
+  <a class="layui-btn layui-btn-small" lay-event="edit">编辑</a>
+  <a class="layui-btn layui-btn-small  layui-btn-danger " lay-event="del">删除</a>
+</script>
+	#[[#]]#define imp_js()
+	<script src="#[[#]]#(ctx??)/static/#(classNameLower)/list.js"></script>
+	#[[#]]#end 
+#[[#]]#end

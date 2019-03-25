@@ -27,10 +27,14 @@ public class BookingConfig extends JFinalConfig {
 	 * 配置常量
 	 */
 	public void configConstant(Constants me) {
+		me.setDevMode(isDevMode());
 		PropKit.use("db.properties");
 		initErrorView(me);
 	}
-
+	private boolean isDevMode() {
+//		return Config.getToBoolean("CONSTANTS.DEV_MODE");
+		return true;
+	}
 	private void initErrorView(Constants me) {
 		
 	}

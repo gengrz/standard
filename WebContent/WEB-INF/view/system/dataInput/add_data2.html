@@ -27,6 +27,20 @@
 	    border-bottom: 20px solid transparent;
 	    border-left: 20px solid darkkhaki;
 	}
+	.layui-tab-title li{
+        display: block;
+    }
+    .layui-tab-title{
+        float: left;
+        width: 100px;
+    }
+    .layui-tab-content{
+        float: left;
+        width: 500px;
+    }
+    .layui-col-md2{
+    	width: auto;
+    }
 </style>
 #end
 
@@ -36,29 +50,132 @@
 <!-- 主体内容 -->
 #define content()
 <div class="layui-fluid">
-<div class="row">
-<div class="layui-col-md6 layui-col-md-offset3">
-  <div class="layui-row layui-col-space1">
-    <div class="layui-col-md4">
-      <div class="grid-now">接入源定义</div>
-    </div>
-    <div class="layui-col-md4">
-      <div class="grid-now">结构定义</div>
-    </div>
-    <div class="layui-col-md4">
-      <div class="grid-after">数据保存</div>
-    </div>
-  </div>
-<form class="layui-form" action="" style="margin-top: 5px;">
-  
-   <div class="layui-form-item">
-    	<div class="layui-input-block">
-	      <button class="layui-btn" lay-submit="" lay-filter="formsub">进入下一步</button>
-	      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
-	    </div>
-   </div>
-</form>
-</div>
+	<div class="row">
+		<div class="layui-col-md6 layui-col-md-offset3">
+		  <div class="layui-row layui-col-space1">
+		    <div class="layui-col-md4">
+		      <div class="grid-now">接入源定义</div>
+		    </div>
+		    <div class="layui-col-md4">
+		      <div class="grid-now">结构定义</div>
+		    </div>
+		    <div class="layui-col-md4">
+		      <div class="grid-after">数据保存</div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	<div class="row" style="height: 380px">
+		<div class="layui-col-md12">
+		  <div class="layui-tab layui-tab-brief" lay-filter="tabfilter">
+			  <ul class="layui-tab-title" style="height: auto;">
+			  	#for(x:attrList)
+			  	<li>#(x.columns.classname)</li>
+			    <!-- <li class="layui-this">人物属性</li>
+			    <li>虚拟属性</li>
+			    <li>社会属性</li>
+			    <li>地理属性</li>
+			    <li>交通属性</li>
+			    <li>案件属性</li>
+			    <li>组织属性</li>
+			    <li>通用属性</li> -->
+			    #end
+			  </ul>
+			  <div class="layui-tab-content" style="width: auto;"><!-- style="width: auto;margin-top: -40px;padding-left: 100px;" -->
+			    <div class="layui-tab-item layui-show">
+			    	<div style="background-color: #F2F2F2;">
+					  <div id="content" class="layui-row layui-col-space15">
+					  		#for(x:attrInfo)
+						  	<div id="#(x.columns.fieldid)" class="layui-col-md2" ondragstart="drag(event)" draggable="true" text="#(x.columns.fieldname)" value="#(x.columns.fieldid)">
+						      <div class="layui-card">
+						        <div class="layui-card-header">#(x.columns.fieldname)</div>
+						        <div class="layui-card-body">
+						          #(x.columns.fieldid)
+						        </div>
+						      </div>
+						    </div>
+						    #end
+					      	<!-- <div id="birthday" class="layui-col-md2" ondragstart="drag(event)" draggable="true" text="出生日期" value="birthday">
+						      <div class="layui-card">
+						        <div class="layui-card-header">出生日期</div>
+						        <div class="layui-card-body">
+						          birthday
+						        </div>
+						      </div>
+						    </div> -->
+						    
+					  </div>
+					</div> 
+			    </div>
+			    <!-- <div class="layui-tab-item">内容2</div>
+			    <div class="layui-tab-item">内容3</div>
+			    <div class="layui-tab-item">内容4</div>
+			    <div class="layui-tab-item">内容5</div> -->
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="layui-col-md6">
+			<div><p><span class="layui-badge">样本数据</span>&nbsp;&nbsp;&nbsp;&nbsp;选定上面的索引标签拖拽至下面的索引字段中，即可完成索引的创建</p></div>
+		</div>
+	</div>
+	<div class="row" style="margin-top: 130px;">
+		<div class="layui-col-md12">
+			<div class="layui-row layui-col-space15">
+				<div class="layui-col-md2" >
+			      <div class="layui-card" >
+			      	<div class="layui-card-header" style="height: auto;">
+			        	<div class="row">
+			        		<p>索引字段<span><i class="layui-icon layui-icon-right" style="position: inherit;"></i></span></p>
+			        	</div>
+			        	<div class="row">
+			        		<p>字段命名<span><i class="layui-icon layui-icon-right" style="position: inherit;"></i></span></p>
+			        	</div>
+			        </div>
+			        <div class="layui-card-body">
+			        	<div>
+			        		<p>样本示例<span><i class="layui-icon layui-icon-right" style="position: inherit;"></i></span></p>
+			        	</div>
+			        </div>
+			      </div>
+			     </div>
+			   <form id="form" class="layui-form" action="" style="margin-top: 5px;">
+				#for(x:fileField)
+		      	<div class="layui-col-md2" >
+			      <div class="layui-card" >
+			        <div class="layui-card-header" style="height: auto;">
+			        	<div class="row">
+			        		<input id="index#(x.columns.index)" name="index#(x.columns.index)" readonly="readonly" ondragover="allowDrop(event)" ondrop="drop(event)" type="text" style="width: 70px;height: 30px;"></input></p>
+			        	</div>
+			        	<div class="row">
+			        		<input id="field#(x.columns.index)" name="field#(x.columns.index)" readonly="readonly" type="text" style="width: 70px;height: 30px;"></input></p>
+			        	</div>
+			        </div>
+			        <div class="layui-card-body">
+			        	<div>
+			        		<input id="sample#(x.columns.index)" name="sample#(x.columns.index)" type="text" value="#(x.columns.field)" readonly="readonly" style="width: 70px;height: 30px;"></input></p>
+			        	</div>
+			        </div>
+			      </div>
+			    </div>
+			    #end
+		  </div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="layui-col-md6" style="margin-top: 30px;">
+			
+			   <div class="layui-form-item">
+			    	<div class="layui-input-block">
+			    	  <input name="lastField" hidden="hidden" value="#(fieldIndex)"></input>
+				      <button class="layui-btn" lay-submit lay-filter="formsub">进入下一步</button>
+				      <!-- <button type="reset" class="layui-btn layui-btn-primary">重置</button> -->
+				    </div>
+			   </div>
+			</form>
+		</div>
+	</div>
 </div>
 #end
 
@@ -72,38 +189,104 @@
 			  
 			  //监听提交
 			  form.on('submit(formsub)', function(data){
-				$.ajax({
-					url:"/system/dataInput/saveDataSource/",       
-	                method:'post',       
-	                data:data.field,        
-	                dataType:'JSON',         
-	                success:function(res){  
-						layer.msg("表单提交成功");    
-	                },    
-                    error:function (data) {
-                        layer.msg("表单提交失败");  
-                    }           
-                });         	
+				  //console.log(data.field);
+				  console.log($('#form').serialize());
+				  $.ajax({
+					  url:"/system/dataInput/saveDSField",
+					  type:"post",
+					  data:$('#form').serialize(),
+					  dataType:"json",
+					  success:function(result){
+						  console.log(result);
+					  }
+				  })
+				  return false;
 			   });
 		});
-	 	
-		layui.use('upload', function(){
-			  var upload = layui.upload;
-			   
-			  //执行实例
-			  var uploadInst = upload.render({
-			    elem: '#file' //绑定元素
-			    ,url: '/system/dataInput/fileUpload' //上传接口
-		    	,accept: 'file' //普通文件
-	    	    ,exts: 'txt' //只允许上传压缩文件
-			    ,done: function(res){
-			    	layer.msg("上传文件成功"); 
+	
+	
+		//拖
+		function drag(ev){
+			var id = ev.target.id;
+		
+			var text = $('#'+id+'').attr("text");
+			var value = $('#'+id+'').attr("value");
+			
+			ev.dataTransfer.setData("Text",text);
+			ev.dataTransfer.setData("Value",value);
+		}
+		function allowDrop(ev){
+			//console.log(ev);
+			ev.preventDefault();
+			
+		}
+		//放
+		function drop(ev){
+			var id = ev.target.id;
+			ev.preventDefault();
+			var text = ev.dataTransfer.getData("Text");
+			var value = ev.dataTransfer.getData("Value");
+			$('#'+id+'').attr("value",text);
+			var field = id.substr(id.length-1,1);
+			field = "field"+field;
+			$('#'+field+'').attr("value",value);
+			//$('input[name='+id+']').attr("value",value);
+			//ev.target.appendChild(document.getElementById(data));
+		}
+		
+		
+		
+		layui.use('element', function(){
+			  var $ = layui.jquery
+			  ,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+			  
+			  //触发事件
+			  /* var active = {
+			    tabChange: function(){
+			      element.tabChange('demo', '22'); //切换到：用户管理
 			    }
-			    ,error: function(){
-			    	layer.msg("上传文件失败"); 
-			    }
-			  });
-		 });
+			  }; */
+			  element.on('tab(tabfilter)', function(data){
+				  console.log(data); //当前Tab标题所在的原始DOM元素
+				  console.log(data.index); //得到当前Tab的所在下标
+				  console.log(data.elem); //得到当前的Tab大容器
+				  $.ajax({
+					  url:"/system/dataInput/queryAttrInfoById/",       
+		                method:'post',       
+		                data:{"attrId":data.index},        
+		                dataType:'JSON',         
+		                success:function(res){
+							console.log(res); 
+							var html = "";
+							if(res.length<=0){
+								html += "<div style='margin-top: 150px;margin-left: 300px;'><h3>该属性没有设置字段信息</h3></div>";
+								$('#content').html("").append(html);
+								return;
+							}
+							for(var i=0;i<res.length;i++){
+								var data = res[i].columns;
+								
+								html +='<div id="'+data.fieldid+'" class="layui-col-md2" ondragstart="drag(event)" draggable="true" text="'+data.fieldname+'" value="'+data.fieldid+'">'
+						      		 +'<div class="layui-card">'
+						      		+'<div class="layui-card-header">'+data.fieldname+'</div>'
+						      		+'<div class="layui-card-body">'
+						      		+''+data.fieldid+''
+						        +'</div>'
+						        +'</div>'
+						        +'</div>'
+							}
+							console.log(html);
+							$('#content').html("").append(html);
+							 
+		                },    
+	                    error:function (data) {
+	                        layer.msg("获取属性信息失败！");  
+	                    }           
+				  });
+		      });
+			  
+			});
+
 	
 	
 		layui.config({

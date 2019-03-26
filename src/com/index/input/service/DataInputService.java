@@ -10,6 +10,7 @@ import java.io.InputStreamReader;
 import java.nio.channels.FileChannel;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -17,6 +18,7 @@ import com.index.field.service.FieldClassService;
 import com.jfinal.log.Log;
 import com.jfinal.plugin.activerecord.Db;
 import com.jfinal.plugin.activerecord.Record;
+import com.sun.org.apache.regexp.internal.recompile;
 
 public class DataInputService {
 	
@@ -26,8 +28,14 @@ public class DataInputService {
 	 * 读取数据源分类
 	 * @return
 	 */
-	public List<Record> getDataSources() {
+	public List<Record> queryDataSources() {
 		return  Db.find("SELECT * from dataclass order by classid asc");
+	}
+	/**
+	 * 根据id查询数据源信息
+	 */
+	public Record queryDSById(String dsId) {
+		return Db.findFirst("SELECT * from data_source_mgr where data_source_id=UNHEX('"+dsId+"')");
 	}
 	/**
 	 * 查询数据源表格
@@ -46,7 +54,7 @@ public class DataInputService {
 		sql.append("insert into ");
 		sql.append("data_source_mgr(data_source_id,data_source_name,data_source_key,believe_level,version,separators,");
 		sql.append("data_source_type,data_source_desc,data_source_file_id,creator,creater_time) values(");
-		sql.append("unhex('"+param.get("dsId")+"')),'"+param.get("dsname")+"','"+param.get("dskey")+"',");
+		sql.append("unhex('"+param.get("dsId")+"'),'"+param.get("dsname")+"','"+param.get("dskey")+"',");
 		sql.append(param.get("zxd")+",'"+param.get("version")+"','"+param.get("fgf")+"','");
 		sql.append(param.get("dstype")+"','"+param.get("dsdesc")+"',unhex('"+param.get("fileId")+"'),");
 		sql.append("'username',now()");
@@ -95,22 +103,40 @@ public class DataInputService {
 	
 	/**
 	 * 读取文件
+	 * @param filePath  文件地址
+	 * @param separators  分隔符
+	 * @return
 	 */
-    public List<String> readFile(String filePath) {
+    public List<Record> readFile(String filePath,String separators) {
         try (
              BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(filePath)))
         ) {
+        	if("0".equals(separators)) {
+        		separators = "	";
+        	}else if("1".equals(separators)) {
+        		separators = ",";
+        	}else if("2".equals(separators)) {
+        		separators = "\"";
+        	}else {
+        		separators = ";";
+        	}
             String line;
             String[] fieId = null;
-            List<String> fieIdList = new ArrayList<String>();
+            List<Record> fieIdList = new ArrayList<Record>();
             while ((line = br.readLine()) != null) {
                 // 一次读入一行数据
                 System.out.println(line);
-                //处理数据  中文逗号
-                fieId = line.split("，") ;
+                //处理数据分隔符  中文逗号
+                fieId = line.split(separators) ;
                 System.out.println(fieId.length);
                 for(int i=0;i<fieId.length;i++) {
-                	fieIdList.add(fieId[i]);
+                	Record map = new Record();
+                	map.set("field", fieId[i]);
+                	map.set("index", i);
+					/*
+					 * map.put("field", fieId[i]); map.put("index", String.valueOf(i));
+					 */
+                	fieIdList.add(map);
                 }
             }
             return fieIdList;
@@ -119,54 +145,26 @@ public class DataInputService {
         }
         return null;
     }
+    /**
+     * 查询属性信息
+     * @return
+     */
+    public List<Record> queryAttrList(){
+    	
+    	return Db.find("select * from fieldclass");
+    }
+    /**
+     * 根据属性id查询字段
+     * @param id
+     * @return
+     */
+    public List<Record> queryAttrInfoById(String id){
+    	
+    	return Db.find("select fieldname,fieldid from fieldmanager where fieldclass = "+id);
+    }
     
-    public static String getEncoding(String str) {    
-            String encode;
-    		
-    	encode = "UTF-16";   		
-            try {    
-                if(str.equals(new String(str.getBytes(), encode))) {   
-                    return encode;    
-                }    
-            } 
-    	catch(Exception ex) {} 
-    		
-    	encode = "ASCII";    
-            try {    
-                if(str.equals(new String(str.getBytes(), encode))){    
-                    return "字符串<< " + str + " >>中仅由数字和英文字母组成，无法识别其编码格式";    
-                }    
-            } 
-    	catch(Exception ex) {}    
-    		
-    	encode = "ISO-8859-1";    
-            try {    
-                if(str.equals(new String(str.getBytes(), encode))) {    
-                    return encode;    
-                }    
-            } 
-    	catch(Exception ex) {}    
-    		
-    	encode = "GB2312";    
-            try {    
-                if(str.equals(new String(str.getBytes(), encode))) {    
-                    return encode;    
-                }    
-            } 
-    	catch(Exception ex) {} 
-    		
-    	encode = "UTF-8";    
-            try {    
-                if(str.equals(new String(str.getBytes(), encode))) {    
-                    return encode;    
-                }    
-            } 
-    	catch(Exception ex) {}    
-            
-            /*
-    	 *......待完善
-    	 */
-    		
-            return "未识别编码格式";    
-        }
+    public Record queryFileInfo(String fileId){
+    	
+    	return  Db.findFirst("select file_path from data_source_file where file_id=UNHEX('"+fileId+"')");
+    }
 }

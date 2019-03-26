@@ -139,6 +139,7 @@
 		
 		 function openedit(id){
 			 //添加文章
+<<<<<<< HEAD
 	    	var index;
 	    		index = layui.layer.open({
 	                title : "编辑字段",
@@ -150,6 +151,19 @@
 	                    //console.log(body);
 	                }
 	            })
+=======
+			    	var index;
+			    		index = layui.layer.open({
+			                title : "编辑字段",
+			                type : 2,
+			                area:["500px","500px"],
+			                content : ctx+"/system/fieldManager/edit/" + id,
+			                success : function(layero, index){
+			                   /*  var body = layui.layer.getChildFrame('body', index);
+			                    console.log(body); */
+			                }
+			            })
+>>>>>>> branch 'master' of https://github.com/gengrz/standard.git
 			    
 		 }
 		 /* 弹出新增页面 */

@@ -2,3 +2,4 @@
 /db.properties
 /ehcache.xml
 /log4j.properties
+/sql/

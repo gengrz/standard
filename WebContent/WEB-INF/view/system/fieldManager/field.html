@@ -88,7 +88,6 @@
 			});
 		
 		 function openedit(id){
-			 
 			 //添加文章
 			    	var index;
 			    		index = layui.layer.open({
@@ -97,23 +96,8 @@
 			                area:["500px","500px"],
 			                content : ctx+"/system/fieldManager/edit/" + id,
 			                success : function(layero, index){
-			                    var body = layui.layer.getChildFrame('body', index);
-			                    console.log(body);
-			                   // if(data){
-			                    	
-//			                        body.find(".title").val(data.username);  //登录名
-//			                        body.find(".userEmail").val(data.userEmail);  //邮箱
-//			                        body.find(".userSex input[value="+data.userSex+"]").prop("checked","checked");  //性别
-//			                        body.find(".userGrade").val(data.userGrade);  //会员等级
-//			                        body.find(".userStatus").val(data.userStatus);    //文章状态
-//			                        body.find(".userDesc").text(data.userDesc);    //文章简介
-//			                        form.render();
-			                    //}
-			                   /*  setTimeout(function(){
-			                        layui.layer.tips('点击此处返回', '.layui-layer-setwin .layui-layer-close', {
-			                            tips: 3
-			                        });
-			                    },500) */
+			                   /*  var body = layui.layer.getChildFrame('body', index);
+			                    console.log(body); */
 			                }
 			            })
 			    

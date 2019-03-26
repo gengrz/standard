@@ -24,8 +24,8 @@
               #for(x:fieldJson.list)
 	            <div class="layui-col-xs12 layui-col-sm4">
 	              <div class="layuiadmin-card-text">
-	                <div class="layui-text-top"><i class="layui-icon layui-icon-water"></i><b>#(x.columns.fieldname)</b></div>
-	                <div><a lay-href="http://www.layui.com/doc/modules/flow.html">#(x.columns.fieldid)   [#(x.columns.fieldtype)] </a></div>
+	                <div class="layui-text-top"><i class="layui-icon layui-icon-note" style="position:relative;top:3px;"></i><b>#(x.columns.fieldname)</b></div>
+	                <div><a>#(x.columns.fieldid)   [#(x.columns.fieldtype)] </a></div>
 	                <p class="layui-text-center">#(x.columns.fielddesc)</p>
 	                <div style="float:right;"><a class="layui-icon layui-icon-edit"  onclick="openedit('#(x.columns.fieldid)')"></a>&nbsp;&nbsp;<i class="layui-icon layui-icon-delete"></i></div>
 	              </div>
@@ -120,8 +120,8 @@
 				    	      var html = '<div class="layui-row layui-col-space10" id="listField">';
 				    	      for (var i = 0; i < list.length; i++) {				    	    	  
 				    	    	  var ht = '<div class="layui-col-xs12 layui-col-sm4"><div class="layuiadmin-card-text">'
-                                            +'<div class="layui-text-top"><i class="layui-icon layui-icon-water"></i><b>'+list[i].columns.fieldname+'</b></div>'
-					               +' <div><a lay-href="http://www.layui.com/doc/modules/flow.html">'+list[i].columns.fieldid   +'   ['+list[i].columns.fieldtype +']</a></div>'
+                                            +'<div class="layui-text-top"><i class="layui-icon layui-icon-note" style="position:relative;top:3px;"></i><b>'+list[i].columns.fieldname+'</b></div>'
+					               +' <div><a>'+list[i].columns.fieldid   +'   ['+list[i].columns.fieldtype +']</a></div>'
 					               +'<p class="layui-text-center">'+list[i].columns.fielddesc+'</p><div style="float:right;"><a class="layui-icon layui-icon-edit"  onclick="openedit(&quot;'+list[i].columns.fieldid+'&quot;)"></a>&nbsp;&nbsp;<i class="layui-icon layui-icon-delete"></i></div>'
 					               +' </div>'
 					               +' </div>'

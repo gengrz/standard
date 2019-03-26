@@ -3,7 +3,6 @@ package com.index.field.service;
 import java.util.ArrayList;
 
 import com.index.field.base.FieldManager;
-import com.jfinal.aop.Enhancer;
 import com.jfinal.kit.Kv;
 import com.jfinal.log.Log;
 import com.jfinal.plugin.activerecord.Db;

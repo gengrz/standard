@@ -43,13 +43,13 @@
 		  <div class="layui-form-item">
 		    <label class="layui-form-label">字段名称(中文):</label>
 		    <div class="layui-input-block">
-		      <input type="text" name="fieldid" placeholder="请输入" autocomplete="off" class="layui-input">
+		      <input type="text" name="fieldname" placeholder="请输入" autocomplete="off" class="layui-input">
 		    </div>
 		  </div>
 		  <div class="layui-form-item">
 		    <label class="layui-form-label">字段标识(英文):</label>
 		    <div class="layui-input-block">
-		      <input type="text" name="fieldname" placeholder="请输入" autocomplete="off" class="layui-input">
+		      <input type="text" name="fieldid" placeholder="请输入" autocomplete="off" class="layui-input">
 		    </div>
 		  </div>
 		  <div class="layui-form-item">
@@ -80,7 +80,7 @@
 		  </div>
 		  <div class="layui-form-item">
 		    <div class="layui-input-block">
-		      <button class="layui-btn" lay-submit lay-filter="tijiao">提交</button>
+		      <button class="layui-btn" lay-submit lay-filter="tijiao">确认添加</button>
 		      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
 		    </div>
 		  </div>
@@ -128,7 +128,7 @@
 			    ,limits:[6,9,12,15,18]
 			    ,layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip']
 			    ,jump: function(obj){
-			      console.log(obj)
+			      //console.log(obj)
 				    //obj包含了当前分页的所有参数，比如：
 				    console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
 				    console.log(obj.limit); //得到每页显示的条数
@@ -156,10 +156,9 @@
 					    	      
 								});	
 				    }
-				    	
+
 			    }
 			  });
-			  
 			  
 			});
 		
@@ -196,30 +195,39 @@
             });
 		 }
 		 /* 弹出新增页面 */
-			function addField(){
-				layer.open({
-					  type: 1,
-					  title: '新增#(type??)',
-					  shadeClose: true,
-					  shade: 0.5,
-					  offset: '80px',
-					  area: '480px',
-					  content: $('#addFieldForm') //dom
-					});
-			};
-			/* 提交新增 */
-			layui.use('form', function(){
-			  	var form = layui.form;
-			  	form.on('submit(tijiao)', function(data){
-				  	$.ajax({
-				        type: 'post',
-				        url: '/system/field/addField',
-				        data: data.field,	//当前容器的全部表单字段，名值对形式：{name: value}
-				        success: function(res){
-				        	console.log(res);
-				        }
-				    });
-			  	});
+		 var addindex;
+		function addField(){
+			addindex = layer.open({
+			  type: 1,
+			  title: '新增#(type??)',
+			  shadeClose: true,
+			  shade: 0.5,
+			  offset: '80px',
+			  area: '480px',
+			  content: $('#addFieldForm') //DOM
 			});
+		};
+		/* 提交新增 */
+		layui.use('form', function(){
+			var $ = layui.$, 
+			form = layui.form;
+		  	form.on('submit(tijiao)', function(data){
+		  		// 弹出loading
+		  	    index2 = top.layer.msg('数据提交中，请稍候', {
+		  	      icon : 16,
+		  	      time : false,
+		  	      shade : 0.5
+		  	    });
+		  		//data.field 当前容器的全部表单字段，名值对形式：{name: value}
+		  	    $.post("/system/fieldManager/add", data.field, function(res) {
+		  	        top.layer.close(index2);
+		  	        layer.msg(res.message, {time: 1000 
+		  	          }, function() {
+		  	        	layer.close(addindex); //再执行关闭   
+		  	        });
+		  	    });
+		  	    return false;
+		  	});
+		});
 	</script>
 #end

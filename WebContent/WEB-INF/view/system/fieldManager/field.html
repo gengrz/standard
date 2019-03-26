@@ -16,7 +16,8 @@
 <div class="layui-fluid">
 <div class="layui-card">
           <div class="layui-card-header">
-            数据元字段 #(type??)
+            	数据元字段 #(type??)
+            	<button class="layui-btn layui-btn-sm" style="float: right;margin-top: 6px;" onclick="addField()">添加</button>
           </div>
           <div class="layui-card-body" id="listFieldAll">
             <div class="layui-row layui-col-space10" id="listField">
@@ -33,8 +34,58 @@
             </div>
           </div>
           <div id="demo7" style="float:right;"></div>
-        </div>
-        </div>
+</div>
+</div>
+<!-- 弹出层的内容 -->
+	<div id='addFieldForm' style="display:none;padding-top:10px;padding-right:20px;">
+        <form class="layui-form">
+          <input type="text" name="fieldclass" style="display:none" value="#(id??)">
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">字段名称(中文):</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="fieldid" placeholder="请输入" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">字段标识(英文):</label>
+		    <div class="layui-input-block">
+		      <input type="text" name="fieldname" placeholder="请输入" autocomplete="off" class="layui-input">
+		    </div>
+		  </div>
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">字段类型:</label>
+		    <div class="layui-input-block">
+		      <select name="fieldtype" lay-filter="aihao">
+		        <option value="String">String</option>
+		        <option value="int">int</option>
+		        <option value="long">long</option>
+		        <option value="double">double</option>
+		        <option value="float">float</option>
+		        <option value="Date">Date</option>
+		      </select>
+		    </div>
+		  </div>
+		  <div class="layui-form-item">
+		    <label class="layui-form-label">是否索引:</label>
+		    <div class="layui-input-block">
+		      <input type="radio" name="state" value="1" title="是">
+		      <input type="radio" name="state" value="0" title="否" checked>
+		    </div>
+		  </div>
+		  <div class="layui-form-item layui-form-text">
+		    <label class="layui-form-label">字段描述:</label>
+		    <div class="layui-input-block">
+		      <textarea placeholder="请输入内容" class="layui-textarea" name="fielddesc"></textarea>
+		    </div>
+		  </div>
+		  <div class="layui-form-item">
+		    <div class="layui-input-block">
+		      <button class="layui-btn" lay-submit lay-filter="tijiao">提交</button>
+		      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+		    </div>
+		  </div>
+		</form>
+	</div>
 #end
 
 
@@ -102,6 +153,31 @@
 			            })
 			    
 		 }
-		  
+		 /* 弹出新增页面 */
+			function addField(){
+				layer.open({
+					  type: 1,
+					  title: '新增#(type??)',
+					  shadeClose: true,
+					  shade: 0.5,
+					  offset: '80px',
+					  area: '480px',
+					  content: $('#addFieldForm') //dom
+					});
+			};
+			/* 提交新增 */
+			layui.use('form', function(){
+			  	var form = layui.form;
+			  	form.on('submit(tijiao)', function(data){
+				  	$.ajax({
+				        type: 'post',
+				        url: '/system/field/addField',
+				        data: data.field,	//当前容器的全部表单字段，名值对形式：{name: value}
+				        success: function(res){
+				        	console.log(res);
+				        }
+				    });
+			  	});
+			});
 	</script>
 #end

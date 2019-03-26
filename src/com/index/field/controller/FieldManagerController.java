@@ -53,6 +53,7 @@ public class FieldManagerController extends   BaseController  {
 	public void field() {
 		String id = getPara("id");
 		String pages = getPara("pages");
+
 		setAttr("id",id);
 		// 前台排序参数获取
 		String sort = getPara("sort", "fieldid");
@@ -99,6 +100,5 @@ public class FieldManagerController extends   BaseController  {
 		Object id = getPara("id");
 		int flag = srv.deleteById(id);
 		renderJson(json(flag));
-
 	}
 }

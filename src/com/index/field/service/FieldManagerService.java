@@ -61,8 +61,8 @@ public class FieldManagerService {
 	/**
 	* 保存
 	*/
-	public void save(FieldManager fieldManager) {
-		fieldManager.save();
+	public boolean save(FieldManager fieldManager) {
+		return fieldManager.save();
 	}
 	
 	/**

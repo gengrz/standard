@@ -21,7 +21,7 @@ public class FieldClassController extends   BaseController  {
 
 	public void index() {
 		List<Record> list= srv.getAll();
-		System.out.println(list.toString());
+//		System.out.println(list.toString());
 		setAttr("fieldtype", JSONUtil.parseArray(list));
 		render("home.html");
 	}
@@ -29,15 +29,8 @@ public class FieldClassController extends   BaseController  {
 //		ArrayList<FieldClass> list = srv.getAll();
 //		ArrayList<FieldClass> list = "";
 //		System.out.println(list.toString());
-		System.out.println("111");
 		setAttr("fieldtype", JSONUtil.parseArray("[{'name':'','id':'','h':''},{'name':'','id':'','h':''}]"));
 		render("home.html");
 	}
 
-	
-	public void field2() {
-		setAttr("type","-虚拟属性");
-		render("field.html");
-	}
-	
 }

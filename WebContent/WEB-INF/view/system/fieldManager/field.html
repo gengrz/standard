@@ -80,7 +80,7 @@
 		  </div>
 		  <div class="layui-form-item">
 		    <div class="layui-input-block">
-		      <button class="layui-btn" lay-submit lay-filter="tijiao">提交</button>
+		      <button class="layui-btn" lay-submit lay-filter="tijiao">确认添加</button>
 		      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
 		    </div>
 		  </div>
@@ -106,13 +106,13 @@
 			    ,limits:[6,9,12,15,18]
 			    ,layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip']
 			    ,jump: function(obj){
-			      console.log(obj)
+			      //console.log(obj)
 				    //obj包含了当前分页的所有参数，比如：
-				    console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
-				    console.log(obj.limit); //得到每页显示的条数
+				    //console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
+				    //console.log(obj.limit); //得到每页显示的条数
 				    	$.get(ctx + "/system/fieldManager/field?id="+id+"&pages="+obj.curr+"&limit="+obj.limit,
 							function(data) {
-				    		 console.log(data.list);
+				    		 //console.log(data.list);
 				    	      var parent=document.getElementById("listFieldAll");
 				    	      var child=document.getElementById("listField");
 				    	      parent.removeChild(child); 
@@ -135,65 +135,57 @@
 			    }
 			  });
 			  
-			  
 			});
 		
 		 function openedit(id){
-			 
 			 //添加文章
-			    	var index;
-			    		index = layui.layer.open({
-			                title : "编辑字段",
-			                type : 2,
-			                area:["500px","500px"],
-			                content : ctx+"/system/fieldManager/edit/" + id,
-			                success : function(layero, index){
-			                    var body = layui.layer.getChildFrame('body', index);
-			                    console.log(body);
-			                   // if(data){
-			                    	
-//			                        body.find(".title").val(data.username);  //登录名
-//			                        body.find(".userEmail").val(data.userEmail);  //邮箱
-//			                        body.find(".userSex input[value="+data.userSex+"]").prop("checked","checked");  //性别
-//			                        body.find(".userGrade").val(data.userGrade);  //会员等级
-//			                        body.find(".userStatus").val(data.userStatus);    //文章状态
-//			                        body.find(".userDesc").text(data.userDesc);    //文章简介
-//			                        form.render();
-			                    //}
-			                   /*  setTimeout(function(){
-			                        layui.layer.tips('点击此处返回', '.layui-layer-setwin .layui-layer-close', {
-			                            tips: 3
-			                        });
-			                    },500) */
-			                }
-			            })
+	    	var index;
+	    		index = layui.layer.open({
+	                title : "编辑字段",
+	                type : 2,
+	                area:["500px","500px"],
+	                content : ctx+"/system/fieldManager/edit/" + id,
+	                success : function(layero, index){
+	                    var body = layui.layer.getChildFrame('body', index);
+	                    //console.log(body);
+	                }
+	            })
 			    
 		 }
 		 /* 弹出新增页面 */
-			function addField(){
-				layer.open({
-					  type: 1,
-					  title: '新增#(type??)',
-					  shadeClose: true,
-					  shade: 0.5,
-					  offset: '80px',
-					  area: '480px',
-					  content: $('#addFieldForm') //dom
-					});
-			};
-			/* 提交新增 */
-			layui.use('form', function(){
-			  	var form = layui.form;
-			  	form.on('submit(tijiao)', function(data){
-				  	$.ajax({
-				        type: 'post',
-				        url: '/system/field/addField',
-				        data: data.field,	//当前容器的全部表单字段，名值对形式：{name: value}
-				        success: function(res){
-				        	console.log(res);
-				        }
-				    });
-			  	});
+		 var addindex;
+		function addField(){
+			addindex = layer.open({
+			  type: 1,
+			  title: '新增#(type??)',
+			  shadeClose: true,
+			  shade: 0.5,
+			  offset: '80px',
+			  area: '480px',
+			  content: $('#addFieldForm') //DOM
 			});
+		};
+		/* 提交新增 */
+		layui.use('form', function(){
+			var $ = layui.$, 
+			form = layui.form;
+		  	form.on('submit(tijiao)', function(data){
+		  		// 弹出loading
+		  	    index2 = top.layer.msg('数据提交中，请稍候', {
+		  	      icon : 16,
+		  	      time : false,
+		  	      shade : 0.5
+		  	    });
+		  		//data.field 当前容器的全部表单字段，名值对形式：{name: value}
+		  	    $.post("/system/fieldManager/add", data.field, function(res) {
+		  	        top.layer.close(index2);
+		  	        layer.msg(res.message, {time: 1000 
+		  	          }, function() {
+		  	        	layer.close(addindex); //再执行关闭   
+		  	        });
+		  	    });
+		  	    return false;
+		  	});
+		});
 	</script>
 #end

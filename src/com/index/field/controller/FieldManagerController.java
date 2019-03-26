@@ -67,10 +67,10 @@ public class FieldManagerController extends   BaseController  {
 
 		Integer pageNumber = getParaToInt("pages", 1);
 		Integer limit = getParaToInt("limit", 9);
-		System.out.println(pageNumber+"--------"+limit);
+		//System.out.println(pageNumber+"--------"+limit);
 		Page<Record> data = srv.pageList(pageNumber, limit, cond);
 		setAttr("fieldJson", JSONUtil.parseObj(data));
-		System.out.println(JSONUtil.parseObj(data));
+		//System.out.println(JSONUtil.parseObj(data));
 		renderJson(JSONUtil.parseObj(data));
 	}
 	public void edit() {
@@ -79,5 +79,14 @@ public class FieldManagerController extends   BaseController  {
 		setAttr("fieldManager", fieldManager);
 		render("fieldManagerAdd.html");
 	}
-	 
+	
+	public void add() {
+		FieldManager field = getModel(FieldManager.class,"",true);
+		if(srcM.save(field)) {
+			setAttr("message", "数据提交成功！");
+		}else {
+			setAttr("message", "数据提交失败！");
+		}
+		renderJson();
+	}
 }

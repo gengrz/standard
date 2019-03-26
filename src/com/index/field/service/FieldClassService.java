@@ -31,7 +31,6 @@ public class FieldClassService {
 	public Page<Record> pageList(int pageNumber, int pageSize, Kv cond) {
 		SqlPara sqlPara = Db.getSqlPara("fieldManager.pageList", cond);
 		Page<Record> pu = Db.paginate(pageNumber, pageSize, sqlPara);
-		System.out.println(pu);
 		return pu;
 	}
 	
@@ -40,4 +39,12 @@ public class FieldClassService {
 		return Db.find("select * from fieldclass where classid="+id).get(0).get("classname");
 	}
 	
+	
+	/**
+	* 删除
+	*/
+	public int deleteById(Object fieldManagerId) {
+		int res=Db.update("delete from fieldmanager where id=?", fieldManagerId);
+		return res;
+	}
 }

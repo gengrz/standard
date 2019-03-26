@@ -1,5 +1,5 @@
 
-#include("/common/admin_layout.html")
+#include("../admin/content_layout.html")
 
 <!-- 调用layout函数 -->
 #@layout()
@@ -10,70 +10,67 @@
 #define js() #end
 <!-- 主体内容 -->
 #define content()
-
-<div class="layui-form" lay-filter="layuiadmin-form-fieldManager" style="padding: 20px 0 0 0; width: 80%;">
-
-	<div class="layui-hide">
-		<input type="hidden" name="fieldid" value="#(fieldManager.fieldid??)">
-	</div>
-					<div class="layui-form-item">
-			<div class="layui-col-md6 layui-col-xs12">
-				<label class="layui-form-label">字段名称(中文)</label>
+<div class="layui-form" lay-filter="layuiadmin-form-fieldManager" style="padding: 20px 0 0 0; width: 90%;">
+			<div class="layui-hide">
+				<input type="hidden" name="id" >
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">字段中文</label>
 				<div class="layui-input-block">
-					<input type="text" class="layui-input " name="fieldname" value="#(fieldManager.fieldname??)"   	lay-verify="required" placeholder="请输入字段名称(中文)">
+					<input type="text" class="layui-input " name="fieldname" value="" required  	lay-verify="required" placeholder="请输入字段名称(中文)">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">字段标识</label>
+				<div class="layui-input-block">
+					<input type="text" class="layui-input " name="fieldid" value=""   required	lay-verify="required" placeholder="请输入字段标识(英文)">
 				</div>
 			</div>
 			 
-			<div class="layui-col-md6 layui-col-xs12">
-				<label class="layui-form-label">字段标识(英文)</label>
-				<div class="layui-input-block">
-					<input type="text" class="layui-input " name="fieldid" value="#(fieldManager.fieldid??)"   	lay-verify="required" placeholder="请输入字段标识(英文)">
-				</div>
-			</div>
-			 
-			</div>
-					<div class="layui-form-item">
-			<div class="layui-col-md6 layui-col-xs12">
+			
+		    <div class="layui-form-item">
 				<label class="layui-form-label">字段类型</label>
 				<div class="layui-input-block">
-					<input type="text" class="layui-input " name="fieldtype" value="#(fieldManager.fieldtype??)"   	lay-verify="required" placeholder="请输入字段类型">
+				<select name="fieldtype" lay-filter=""  value="">
+				    <option value="">请选择字段类型</option>
+			        <option value="String">String</option>
+			        <option value="DateTime">DateTime</option>
+			        <option value="Date">Date</option>
+			        <option value="Boolean">Boolean</option>
+			        <option value="Float32">Float32</option>
+			        <option value="Float64">Float64</option>
+			        <option value="Decimal">Decimal</option>
+			        <option value="UInt8">UInt8</option>
+			        <option value="UInt16">UInt16</option>
+			        <option value="UInt32">UInt32</option>
+			        <option value="UInt64">UInt64</option>
+			        <option value="Enum8">Enum8</option>
+			        <option value="Enum16">Enum16</option>
+			      </select>
 				</div>
 			</div>
 			 
-			<div class="layui-col-md6 layui-col-xs12">
+			<div class="layui-form-item">
 				<label class="layui-form-label">字段描述</label>
 				<div class="layui-input-block">
-					<input type="text" class="layui-input " name="fielddesc" value="#(fieldManager.fielddesc??)"   	lay-verify="required" placeholder="请输入字段描述">
+					<textarea placeholder="请输入内容" class="layui-textarea"  value=""   	lay-verify="required" placeholder="请输入字段描述" name="fielddesc"></textarea>
 				</div>
+				
 			</div>
-			 
-			</div>
-					<div class="layui-form-item">
-			<div class="layui-col-md6 layui-col-xs12">
-				<label class="layui-form-label">字段类别</label>
+			
+			<div class="layui-form-item">
+				<label class="layui-form-label">是否索引</label>
 				<div class="layui-input-block">
-					<input type="text" class="layui-input " name="fieldclass" value="#(fieldManager.fieldclass??)"   	lay-verify="required" placeholder="请输入字段类别">
+					<input type="radio" name="state" value="0" title="是">
+					<input type="radio" name="state" value="1" title="否">
 				</div>
 			</div>
-			 
-			<div class="layui-col-md6 layui-col-xs12">
-				<label class="layui-form-label">状态(0可用，1不可用)</label>
+			 <div class="layui-form-item">
 				<div class="layui-input-block">
-					<input type="text" class="layui-input " name="state" value="#(fieldManager.state??)"   	lay-verify="required" placeholder="请输入状态(0可用，1不可用)">
+					<button class="layui-btn layui-btn-sm" lay-submit="" lay-filter="addFieldManager">立即保存</button>
+					<button type="reset" class="layui-btn layui-btn-sm layui-btn-primary">重置</button>
 				</div>
 			</div>
-			 
-			</div>
- 
-	 
- 
- 
-	<div class="layui-form-item  layui-col-xs12">
-		<div class="layui-input-block">
-			<button class="layui-btn layui-btn-sm" lay-submit="" lay-filter="addFieldManager">立即保存</button>
-			<button type="reset" class="layui-btn layui-btn-sm layui-btn-primary">重置</button>
-		</div>
-	</div>
 </div>
 
 
@@ -82,11 +79,21 @@
 
 <!-- 引入额外的js -->
 #define imp_js()
-<script type="text/javascript" src="/static/system/fieldManager.js"></script>
 <script>
-layui.use([ 'index','table', 'form'], function() {
-	var $ = layui.$, form = layui.form, table = layui.table;
+var fieldManager = #(fieldManager??);
+console.log(fieldManager.fieldtype);
+$("select[name=fieldtype]").val(fieldManager.fieldtype);
+$('input[name="state"][value="'+fieldManager.state+'"]').attr("checked",true)
+$("textarea[name=fielddesc]").val(fieldManager.fielddesc);
+$("input[name=fieldid]").attr("value",fieldManager.fieldid);
+$("input[name=fieldname]").attr("value",fieldManager.fieldname);
+$("input[name=id]").attr("value",fieldManager.id);
 
+var fieldtype =#(fieldManager??);
+layui.use([ 'layedit','table', 'form'], function() {
+	var $ = layui.$, form = layui.form, table = layui.table;
+	layedit = layui.layedit;
+	
 	form.on("submit(addFieldManager)", function(data) {
 		// 弹出loading
 		var index2 = top.layer.msg('数据提交中，请稍候', {
@@ -94,9 +101,9 @@ layui.use([ 'index','table', 'form'], function() {
 			time : false,
 			shade : 0.8
 		});
-		
+		console.log(data.field);
 		// 提交
-		$.post(ctx + "/system/fieldManager/save", data.field, function(data) {
+		$.post(ctx + "/system/fieldManager/update", data.field, function(data) {
 			top.layer.close(index2);
 			layer.msg(data.message, {time: 1000 
 				}, function() {

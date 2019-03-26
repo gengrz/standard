@@ -20,14 +20,14 @@
             	<button class="layui-btn layui-btn-sm" style="float: right;margin-top: 6px;" onclick="addField()">添加</button>
           </div>
           <div class="layui-card-body" id="listFieldAll">
-            <div class="layui-row layui-col-space10" id="listField">
-              #for(x:fieldJson.list)
+             <div class="layui-row layui-col-space10" id="listField">
+             #for(x:fieldJson.list)
 	            <div class="layui-col-xs12 layui-col-sm4">
 	              <div class="layuiadmin-card-text">
 	                <div class="layui-text-top"><i class="layui-icon layui-icon-water"></i><b>#(x.columns.fieldname)</b></div>
 	                <div><a lay-href="http://www.layui.com/doc/modules/flow.html">#(x.columns.fieldid)   [#(x.columns.fieldtype)] </a></div>
-	                <p class="layui-text-center">#(x.columns.fielddesc)</p>
-	                <div style="float:right;"><a class="layui-icon layui-icon-edit"  onclick="openedit('#(x.columns.fieldid)')"></a>&nbsp;&nbsp;<i class="layui-icon layui-icon-delete"></i></div>
+	                <p class="layui-text-center" title="#(x.columns.fielddesc)">#(x.columns.fielddesc)</p>
+	                <div style="float:right;"><a class="layui-icon layui-icon-edit"  onclick="openedit('#(x.columns.id)')"></a>&nbsp;&nbsp;<a class="layui-icon layui-icon-delete" onclick="del('#(x.columns.id)')"></a></div>
 	              </div>
 	            </div>
             #end
@@ -92,6 +92,28 @@
 <!-- 引入额外的js -->
 #define imp_js()
 	<script>
+ /* $(document).ready(function() {
+	$.get(ctx + "/system/fieldManager/field?id="+id+"&pages=1&limit=9",
+			function(data) {
+    		 console.log(data.list);
+    	      var parent=document.getElementById("listFieldAll");
+    	      var list = data.list;
+    	      var html = '<div class="layui-row layui-col-space10" id="listField">';
+    	      for (var i = 0; i < list.length; i++) {				    	    	  
+    	    	  var ht = '<div class="layui-col-xs12 layui-col-sm4"><div class="layuiadmin-card-text">'
+                            +'<div class="layui-text-top"><i class="layui-icon layui-icon-water"></i><b>'+list[i].columns.fieldname+'</b></div>'
+	               +' <div><a lay-href="http://www.layui.com/doc/modules/flow.html">'+list[i].columns.fieldid   +'   ['+list[i].columns.fieldtype +']</a></div>'
+	               +'<p class="layui-text-center">'+list[i].columns.fielddesc+'</p><div style="float:right;"><a class="layui-icon layui-icon-edit"  onclick="openedit(&quot;'+list[i].columns.id+'&quot;)"></a>&nbsp;&nbsp;<a class="layui-icon layui-icon-delete"onclick="del(&quot;'+list[i].columns.id+'&quot;)"></a></div>'
+	               +' </div>'
+	               +' </div>'
+	               html+=ht;
+			  }
+    	      html+='</div>'
+              document.getElementById("listFieldAll").innerHTML = html;
+    	      
+			});
+    
+}); */
         var fieldtype = #(fieldJson??);
         var id = #(id??);
         var total = fieldtype.totalRow;
@@ -110,28 +132,31 @@
 				    //obj包含了当前分页的所有参数，比如：
 				    console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
 				    console.log(obj.limit); //得到每页显示的条数
+				    if(laypage!=obj.curr){
 				    	$.get(ctx + "/system/fieldManager/field?id="+id+"&pages="+obj.curr+"&limit="+obj.limit,
-							function(data) {
-				    		 console.log(data.list);
-				    	      var parent=document.getElementById("listFieldAll");
-				    	      var child=document.getElementById("listField");
-				    	      parent.removeChild(child); 
-				    	      var list = data.list;
-				    	      var html = '<div class="layui-row layui-col-space10" id="listField">';
-				    	      for (var i = 0; i < list.length; i++) {				    	    	  
-				    	    	  var ht = '<div class="layui-col-xs12 layui-col-sm4"><div class="layuiadmin-card-text">'
-                                            +'<div class="layui-text-top"><i class="layui-icon layui-icon-water"></i><b>'+list[i].columns.fieldname+'</b></div>'
-					               +' <div><a lay-href="http://www.layui.com/doc/modules/flow.html">'+list[i].columns.fieldid   +'   ['+list[i].columns.fieldtype +']</a></div>'
-					               +'<p class="layui-text-center">'+list[i].columns.fielddesc+'</p><div style="float:right;"><a class="layui-icon layui-icon-edit"  onclick="openedit(&quot;'+list[i].columns.fieldid+'&quot;)"></a>&nbsp;&nbsp;<i class="layui-icon layui-icon-delete"></i></div>'
-					               +' </div>'
-					               +' </div>'
-					               html+=ht;
-							  }
-				    	      html+='</div>'
-/* 				    	      document.getElementById("listFieldAll").innerHTML = document.getElementById("insert").innerHTML.replace("<table><tbody><tr><td>"+modelId+"被选中</td></tr></tbody></table>","");   
- */				    	      document.getElementById("listFieldAll").innerHTML = html;
-				    	      
-							});
+								function(data) {
+					    		 console.log(data.list);
+					    	      var parent=document.getElementById("listFieldAll");
+					    	      var child=document.getElementById("listField");
+					    	      parent.removeChild(child); 
+					    	      var list = data.list;
+					    	      var html = '<div class="layui-row layui-col-space10" id="listField">';
+					    	      for (var i = 0; i < list.length; i++) {				    	    	  
+					    	    	  var ht = '<div class="layui-col-xs12 layui-col-sm4"><div class="layuiadmin-card-text">'
+	                                            +'<div class="layui-text-top"><i class="layui-icon layui-icon-water"></i><b>'+list[i].columns.fieldname+'</b></div>'
+						               +' <div><a lay-href="http://www.layui.com/doc/modules/flow.html">'+list[i].columns.fieldid   +'   ['+list[i].columns.fieldtype +']</a></div>'
+						               +'<p class="layui-text-center" title="'+list[i].columns.fielddesc+'">'+list[i].columns.fielddesc+'</p><div style="float:right;"><a class="layui-icon layui-icon-edit"  onclick="openedit(&quot;'+list[i].columns.id+'&quot;)"></a>&nbsp;&nbsp;<a class="layui-icon layui-icon-delete"onclick="del(&quot;'+list[i].columns.id+'&quot;)"></a></div>'
+						               +' </div>'
+						               +' </div>'
+						               html+=ht;
+								  }
+					    	      html+='</div>'
+	/* 				    	      document.getElementById("listFieldAll").innerHTML = document.getElementById("insert").innerHTML.replace("<table><tbody><tr><td>"+modelId+"被选中</td></tr></tbody></table>","");   
+	 */				    	      document.getElementById("listFieldAll").innerHTML = html;
+					    	      
+								});	
+				    }
+				    	
 			    }
 			  });
 			  
@@ -139,19 +164,36 @@
 			});
 		
 		 function openedit(id){
-			 //添加文章
 			    	var index;
 			    		index = layui.layer.open({
 			                title : "编辑字段",
 			                type : 2,
 			                area:["500px","500px"],
+			                btnAlign: 'c', //按钮居中
 			                content : ctx+"/system/fieldManager/edit/" + id,
 			                success : function(layero, index){
 			                   /*  var body = layui.layer.getChildFrame('body', index);
 			                    console.log(body); */
-			                }
+			                },
+			                end:function(){location.reload();}//弹出层结束后，刷新主页面}
 			            })
 			    
+		 }
+			    		
+    		 function del(id){
+			  layer.confirm('确定删除？', {icon: 3, title: '提示信息'}, function (index) {
+                // 向服务端发送删除指令
+				$.post(ctx + "/system/fieldManager/del?id=" + id,
+                    function (data) {
+                	layer.msg(data.message, {
+              		  icon: 1,
+              		  time: 1000 //1秒关闭（如果不配置，默认是3秒）
+              		}, function(){
+              			location.reload();
+              		}); 
+                	 
+                  });
+            });
 		 }
 		 /* 弹出新增页面 */
 			function addField(){

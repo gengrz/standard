@@ -4,7 +4,10 @@
 #@layout()
 <!-- 引入额外的css -->
 #define css()
- 
+<style>
+ .blue{background: #f8f8f8;color: white;}
+
+</style>
 #end
 
 <!-- 引入额外的js -->
@@ -23,8 +26,8 @@
           <div class="layui-card-body">
             <ul class="layui-row layuiadmin-card-team">
               #for(x:fieldtype) 
-              <li class="layui-col-xs12">
-                <a href="#" id="#(x.columns.classid)" onclick="test('#(x.columns.classid)','#(x.columns.path)','#(x.columns.classname)')">
+              <li class="layui-col-xs12" id="li#(x.columns.classid)">
+                <a href="#"  id="#(x.columns.classid)" onclick="test('#(x.columns.classid)','#(x.columns.path)','#(x.columns.classname)')">
                   <span class="layui-team-img"><img src=""></span> 
                   <span>#(x.columns.classname)</span>
                 </a>
@@ -43,6 +46,13 @@
 <!-- 引入额外的js -->
 #define imp_js()
 	<script>
+
+$(document).ready(function(){
+	$("#li1").addClass("blue");
+	$("ul li").click(function(){
+	    $(this).addClass("blue").siblings().removeClass("blue");
+	});
+});
 	    var fieldtype = #(fieldtype);
 	    console.log(fieldtype);
 	     
@@ -63,6 +73,8 @@
     	   console.log(id);
     		   path = path+"?id="+id+"&type="+classname;
             $("#iframe1").attr("src",path)
+            $("#"+id).css("backgroud","red");
+            
        }
 	
 	</script>

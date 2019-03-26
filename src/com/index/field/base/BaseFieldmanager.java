@@ -9,6 +9,14 @@ import com.jfinal.plugin.activerecord.IBean;
 @SuppressWarnings({"serial", "unchecked"})
 public abstract class BaseFieldmanager<M extends BaseFieldmanager<M>> extends Model<M> implements IBean {
 
+	public M setId(java.lang.Integer id) {
+		set("id", id);
+		return (M)this;
+	}
+	
+	public java.lang.Integer getId() {
+		return getInt("id");
+	}
 	public M setFieldname(java.lang.String fieldname) {
 		set("fieldname", fieldname);
 		return (M)this;

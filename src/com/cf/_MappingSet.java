@@ -20,7 +20,7 @@ public class _MappingSet {
 
 	public static void mapping(ActiveRecordPlugin arp) {
 		arp.addMapping("fieldclass", "classid", FieldClass.class);
-		arp.addMapping("fieldmanager", "fieldid", FieldManager.class);
+		arp.addMapping("fieldmanager", "id", FieldManager.class);
 		
 
 	}

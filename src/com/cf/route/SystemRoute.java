@@ -5,7 +5,6 @@ import com.index.HomeController;
 import com.index.field.controller.FieldClassController;
 import com.index.field.controller.FieldManagerController;
 import com.index.input.controller.DataInputController;
-import com.index.input.controller.FileUpLoadController;
 import com.jfinal.config.Routes;
 
 /**
